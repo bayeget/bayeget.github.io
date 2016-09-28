@@ -1,0 +1,15 @@
+/*
+	Section Stylesheet
+*/
+
+/* ## Map Section ## */
+
+.map{
+	position: relative;	
+	margin-top: 120px;
+}
+.map-canvas {
+	border: medium none;
+    height: 521px;
+    width: 100%;
+}
