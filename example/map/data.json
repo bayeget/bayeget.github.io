@@ -1,0 +1,10 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {"type": "Feature", "id": 0, "geometry": {"type": "Point", "coordinates": [55.831903, 37.411961]}, "img":"images/1.jpg", "properties": {"balloonContent": "Содержимое балуна1", "clusterCaption": "Еще одна метка", "hintContent": "Текст подсказки"},"content": {"title": "title1", "description": "description1", "hintContent": "Текст подсказки"}},
+        {"type": "Feature", "id": 1, "geometry": {"type": "Point", "coordinates": [55.763338, 37.565466]}, "img":"images/2.jpg", "properties": {"balloonContent": "Содержимое балуна2", "clusterCaption": "Еще одна метка", "hintContent": "Текст подсказки"},"content": {"title": "title2", "description": "description2", "hintContent": "Текст подсказки"}},
+        {"type": "Feature", "id": 2, "geometry": {"type": "Point", "coordinates": [55.763338, 37.565466]}, "img":"images/3.jpg", "properties": {"balloonContent": "Содержимое балуна3", "clusterCaption": "Еще одна метка", "hintContent": "Текст подсказки"},"content": {"title": "title3", "description": "description3", "hintContent": "Текст подсказки"}},
+        {"type": "Feature", "id": 3, "geometry": {"type": "Point", "coordinates": [55.744522, 37.616378]}, "img":"images/4.jpg", "properties": {"balloonContent": "Содержимое балуна4", "clusterCaption": "Еще одна метка", "hintContent": "Текст подсказки"},"content": {"title": "title4", "description": "description4", "hintContent": "Текст подсказки"}},
+        {"type": "Feature", "id": 4, "geometry": {"type": "Point", "coordinates": [55.780898, 37.642889]}, "img":"images/5.jpg", "properties": {"balloonContent": "Содержимое балуна5", "clusterCaption": "Еще одна метка", "hintContent": "Текст подсказки"},"content": {"title": "title5", "description": "description5", "hintContent": "Текст подсказки"}}
+    ]
+}

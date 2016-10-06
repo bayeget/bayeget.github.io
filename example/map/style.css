@@ -1,0 +1,114 @@
+#body{
+	position: fixed;
+	margin: 50px 0 0 50px;
+	width: 400px;
+	height: 600px;
+	
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	flex-flow: column wrap;
+	z-index: 5000;
+
+
+}
+#body .main{
+	font-size: 26px;
+	color: white;
+	flex:0 1 100px;
+	text-align: center;
+
+	
+	background: url("images/black_60.png") repeat;
+}
+
+.main .filters{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	font-size: 18px;
+
+}
+
+.filters .button{
+	border:  1px dotted white;
+	flex: 1 1 80px;
+}
+.filters .button:hover{
+	cursor: pointer;
+	border:  1px solid white;
+}
+
+#body .white_line{
+	flex: 0 1 20px;
+
+}
+#body #content{
+	flex:1 1 100px;
+	font-size: 14px;
+	color: white;
+	text-align: center;
+	background: url("images/black_60.png") repeat;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	flex-flow: column wrap;
+	
+}
+#content #li_titles{
+	overflow: auto;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	flex-flow: column;
+	flex: 1 1 200px;
+}
+#li_titles .li_title{
+	flex: 0 1 30px;
+	border:  1px dotted white;
+	min-height: 30px;
+}
+#li_titles .li_title:hover{
+	cursor: pointer;
+	border:  1px solid white;
+}
+
+
+#body .object{
+	flex:0 1 100px;
+	font-size: 14px;
+	color: white;
+	text-align: center;
+	
+}
+#content .contentImage{
+	flex: 0 1 100px;
+	order: 2;	
+}
+.contentImage img{
+	width: 70%;
+	height: auto;
+}
+
+#content .title{
+	flex: 0 1 40px;
+	font-size: 24px;
+	order: 1;
+}
+#content .description{
+	flex: 0 1 200px;
+	order: 3;
+}
+#exit{
+	position: absolute;
+	left: 96%;
+	font-size: 20px;
+	color: white;
+}
+#exit:hover{
+	cursor: pointer;
+
+}
