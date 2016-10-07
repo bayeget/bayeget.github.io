@@ -93,10 +93,8 @@ function init() {
         if (content == null){
             createContent();
         };
-        var object_card = document.getElementById('object_card');
-       if (object_card != null){
-            content.removeChild(object_card);
-        };
+        
+
          var li_titles = document.getElementById('li_titles');
         if (li_titles != null){
             content.removeChild(li_titles);
@@ -118,9 +116,16 @@ function init() {
  
     
         function createListParams(params){
+
+            var object_card = document.getElementById('object_card');
             var lists = params.objects._objectsById;
             var content = document.getElementById('content');
             var titlesDiv = document.createElement('div');
+
+            if (object_card != null){
+                content.removeChild(object_card);
+            };
+
             titlesDiv.id="li_titles"
             content.insertBefore(titlesDiv, null);
             
@@ -142,7 +147,14 @@ function init() {
                     console.log(val);
                     // createBalloon(val);
                         // val.balloon.isOpen();
-                         myMap.panTo(val.geometry.coordinates, {
+                        var content = document.querySelector('.title');
+                        if (content==null) {
+                            createSelectContent(val, params);    
+                            }
+                        
+                        innerSelectContent(val); 
+
+                        myMap.panTo(val.geometry.coordinates, {
                                         delay: 0
                                     });
                 };
@@ -197,6 +209,7 @@ function init() {
         function onObjectEvent (e) {
             var objectId = e.get('objectId'),
                 object = params.objects.getById(objectId);
+
                                 
             myMap.panTo(object.geometry.coordinates, {
                                         delay: 0
@@ -205,14 +218,14 @@ function init() {
            
            var content = document.querySelector('.title');
             if (content==null) {
-                createSelectContent(object);    
+                createSelectContent(object, params);    
             }
             
             innerSelectContent(object);             
         };
          
         //создания блока в content по нажатию на маркер 
-        function createSelectContent(object){
+        function createSelectContent(object, params){
             //проверка блока контент
             var titlesDiv = document.getElementById('li_titles');
              var content = document.getElementById('content');
@@ -223,20 +236,21 @@ function init() {
 
             } else { 
                 content.removeChild(titlesDiv);
-            }
-            ;
+            };
 
             var elem = document.querySelector('#content');
             var content = document.createElement('div'),
                 title = document.createElement('div'),
                 description = document.createElement('div'),
+                back = document.createElement('div'),
                 image = document.createElement('div'),
                 imageSrc = document.createElement('img');
 
                 
-            content.id="object_card"
+            content.id="object_card";
             title.className = "title";
-            
+            back.id="button_back";
+            back.innerHTML="Назад";
             description.className="description";
             
             
@@ -244,9 +258,14 @@ function init() {
             
             elem.insertBefore(content, null);
             content.insertBefore(title, null);
-            content.insertBefore(description, null)
+            content.insertBefore(description, null);
             content.insertBefore(image, null);
             image.insertBefore(imageSrc, null);
+            content.insertBefore(back, null);
+
+            back.onclick = function() {
+                createListParams(params);
+            }
 
         };
         function innerSelectContent(object) {
@@ -260,6 +279,7 @@ function init() {
                 title.innerHTML = object.content.title;
                 description.innerHTML = object.content.description;
                 imageSrc.src= object.img;
+
                 
         };
 
