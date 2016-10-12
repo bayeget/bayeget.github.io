@@ -346,9 +346,10 @@ video.bgvid {position: absolute; right: 0; bottom: 0; min-width: 100%; min-heigh
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 /* 07 - reviews */
 /*-------------------------------------------------------------------------------------------------------------------------------*/
-.reviews{position: relative; margin-top: 1%;margin-bottom: 1%}
-.reviews img{width: 800px; height: auto; margin-top: 1%;position: relative;}
-.reviews p{font-style:italic; position: relative; margin-bottom: 100px;}
+.reviews{position: relative; width: 1000px; margin: 0 auto;}
+.reviews img{height: 500px; width: auto; margin-top: 1%;position: relative;}
+.reviews p{font-style:italic; position: relative;}
+.reviews h3{margin: 10px 150px 50px 0; position: relative; text-transform: none; text-align: right; font-style:italic;}
 
 
 
