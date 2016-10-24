@@ -70,10 +70,51 @@
 					<img src="image/forma.png" style="height:auto;" alt="">
 				</div>
 			</div>
-			<div id="content3"></div>
+
+
+			<div id="content3">
+				<div id="contact1" class="contact_slider">
+					<div class="contact_ava"><img src="image/ava.png" alt=""></div>
+					<div class="contact_name">
+						<div class="contact_fio">Alice G.Mullins</div>
+						<div class="contact_dol">General Director</div>
+					</div>
+					<div class="contact_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad quidem quo nam iste unde libero ipsum expedita aut, omnis eveniet.
+					</div>
+				</div>
+				<div id="contact2" class="contact_slider">
+					<div class="contact_ava"><img src="image/ava.png" alt=""></div>
+					<div class="contact_name">
+						<div class="contact_fio">Patricj Alwesome</div>
+						<div class="contact_dol">Proect Manager</div>
+					</div>
+					<div class="contact_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas nisi ratione, asperiores obcaecati, corrupti voluptatum dolorem quisquam.
+					</div>
+				</div>
+				<div id="contact3" class="contact_slider">
+					<div class="contact_ava"><img src="image/ava.png" alt=""></div>
+					<div class="contact_name">
+						<div class="contact_fio">Fillipe Noiste</div>
+						<div class="contact_dol">IT Spesialist</div>
+					</div>
+					<div class="contact_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, suscipit. Soluta culpa cupiditate nihil pariatur quia. Ducimus voluptatibus, fugiat nisi excepturi delectus labore, molestiae quo autem alias. Illum.
+					</div>
+				</div>
+				
+				<div class="contact_buttons">
+					<div id="button1" class="buttons"></div>
+					<div id="button2" class="buttons"></div>
+					<div id="button3" class="buttons"></div>
+				</div>
+			</div>
+
+
 			<div id="content4"></div>
 			<div id="footer"></div>
-			<div id="footer_bar"></div>
+			<div id="footer_bar" class="conteiner">
+				<div class="footer_info">Team of Use</div>
+				<div class="footer_copy">Copyright 2015</div>
+			</div>
 		</div><!-- wrapper -->
 	</div><!-- /container -->
 	<nav class="outer-nav left vertical">
@@ -108,6 +149,56 @@
 		}
 		
 	}
+	var contact1 = document.getElementById('contact1');
+	var contact2 = document.getElementById('contact2');
+	var contact3 = document.getElementById('contact3');
+	var button1 = document.getElementById('button1');
+	var button2 = document.getElementById('button2');
+	var button3 = document.getElementById('button3');
+	var contact = 1;
+
+
+	contact2.style.display='none';
+	contact3.style.display='none';
+
+	button1.style.backgroundColor='#69d2e7';
+	
+   	button1.onclick = function(){
+   		if (contact!=1){
+   			contact1.style.display='';
+   			contact2.style.display='none';
+			contact3.style.display='none';
+			contact=1;
+			button1.style.backgroundColor='#69d2e7';
+			button2.style.backgroundColor='';
+			button3.style.backgroundColor='';
+   		}
+
+   	};
+   	button2.onclick = function(){
+   		if (contact!=2){
+   			contact1.style.display='none';
+   			contact2.style.display='';
+			contact3.style.display='none';
+			contact=2;
+			button1.style.backgroundColor='';
+			button2.style.backgroundColor='#69d2e7';
+			button3.style.backgroundColor='';
+   		}
+   	};
+   
+   	button3.onclick = function(){
+   		if (contact!=3){
+   			contact1.style.display='none';
+			contact2.style.display='none';
+			contact3.style.display='';
+			contact=3;
+			button1.style.backgroundColor='';
+			button2.style.backgroundColor='';
+			button3.style.backgroundColor='#69d2e7';
+   		}
+   	};
+
 
 
 		

@@ -227,6 +227,111 @@ body{
 }
 
 
+#content3{
+	background-color: #f1f1f1;
+	margin: 0 auto;
+	
+	min-height: 540px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 50px 0;
+}
+#content3 .contact_slider{
+	flex:1 0 100%;
+	min-height: 360px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	padding: 50px 0;
+	transition: 0.5s;
+}
+
+
+
+.contact_slider .contact_ava{
+	flex:0 0 180px;
+	min-height: 180px;
+	min-width: 180px;
+	background: white;
+	border-radius: 50%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.contact_ava img{
+	max-height: 90px;
+}
+
+.contact_slider .contact_name{
+	flex: 0 0 70px;
+	font-size: 28px;
+
+	display: flex;
+	align-items: center;
+	flex-flow: column;
+
+}
+.contact_fio{
+	font-size: 32px;
+	font-weight: 600;
+}
+.contact_slider .contact_description{
+	flex:0 0 70px;
+	max-width: 660px;
+	font-size: 24px;
+	text-align: center;
+}
+#content3 .contact_buttons{
+	flex:0 0 100%;
+	height: 15px; 
+	width: 100px;
+
+	display: flex;
+	justify-content: space-between;
+}
+.contact_buttons .buttons{
+	flex:0 0 15px;
+	height: 15px;
+	border:1px solid rgba(122,122,122,0.5);
+	box-shadow: 0 0 2px rgba(122,122,122,0.5);
+	border-radius: 15px; 
+	cursor: pointer;
+}
+.contact_buttons .buttons:hover{
+	background: #69d2e7;
+
+}
+
+
+
+#footer_bar{
+	background: #69d2e7;
+	min-height: 60px;
+
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	flex-direction: row wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 100px;
+	color: white;
+	font-size: 24px;
+
+}
+
+
+
+
 @media screen and (max-width: 1099px) {
 	.conteiner{
 		min-width: 90%;
