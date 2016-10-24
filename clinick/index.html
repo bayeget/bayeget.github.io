@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Clinick website template</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<script src="js/modernizr.custom.25376.js"></script>
+</head>
+<body>
+<div id="two" class="header-bar">
+					<div class="logo">
+						<img src="image/logo.png" style="width: auto;" alt="">
+					</div>
+					<div id="showMenu" class="menu_logo">
+						<img src="image/menu.png" style="width: auto;" alt="">
+					</div>
+</div>
+<div id="perspective" class="perspective effect-airbnb">
+
+	<div class="container">
+
+		<div class="wrapper"><!-- wrapper needed for scroll -->
+			
+			
+			<div id="header">
+				<div class="header_content">
+					<div>
+						<h1>HELLO</h1>
+						<p>we are online clinick</p>
+					</div>
+				</div>
+				<div class="space"></div>
+			</div>
+			<div id="content1">
+				<div class="about_us">
+					<div class="title"><div class="title-content">about us</div></div>
+					<div class="description"><div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni ratione doloremque distinctio nihil quod corrupti voluptatum rem, provident veniam, aliquam, ullam saep	e. Fugiat eum provident sit, perspiciatis minima nesciunt autem!20</div></div>
+				</div>
+
+				
+				<div class="icons conteiner">
+					<div class="icon">
+						<div class="image">
+							<img src="image/content1/icon1.png" alt="">
+						</div>
+						<div class="title">Lorem ipsum dolor sit amet.</div>
+					</div>
+					<div class="icon">
+						<div class="image">
+							<img src="image/content1/icon2.png" alt="">
+						</div>
+						<div class="title">Lorem ipsum dolor sit amet.</div>
+					</div>
+					<div class="icon">
+						<div class="image">
+							<img src="image/content1/icon3.png" alt="">
+						</div>
+						<div class="title">Lorem ipsum dolor sit amet.</div>
+					</div>
+				</div>
+
+			</div>
+			<div id="content2">
+				<div class="title">
+					<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id eum, magni est porro pariatur quis veniam.</div>
+				</div>
+				<div class="slider">
+					<img src="image/forma.png" style="height:auto;" alt="">
+				</div>
+			</div>
+			<div id="content3"></div>
+			<div id="content4"></div>
+			<div id="footer"></div>
+			<div id="footer_bar"></div>
+		</div><!-- wrapper -->
+	</div><!-- /container -->
+	<nav class="outer-nav left vertical">
+		<a href="#" class="icon-home">Home</a>
+				<a href="#" class="icon-news">News</a>
+				<a href="#" class="icon-image">Images</a>
+				<a href="#" class="icon-upload">Uploads</a>
+				<a href="#" class="icon-star">Favorites</a>
+				<a href="#" class="icon-mail">Messages</a>
+				<a href="#" class="icon-lock">Security</a>
+	</nav>
+</div>
+	
+	<script src="js/classie.js"></script>
+	<script src="js/menu.js"></script>
+	<script>
+		var fixed = document.getElementById('one');
+		var static = document.getElementById('two');
+		
+
+	window.onscroll = function() {
+  		var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+  		// console.log(scrolled + 'px');
+  		
+  		if (scrolled>10) {
+			static.style.height='80px';
+			static.style.backgroundColor='';	 
+			 
+		}
+		else{
+			static.style.height='100px';	
+		}
+		
+	}
+
+
+		
+	</script>
+</body>
+</html>
