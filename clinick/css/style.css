@@ -19,6 +19,9 @@ body{
 	margin: 0 auto;
 	
 	min-height: 470px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -26,6 +29,9 @@ body{
 .header-bar{
 	position: fixed;
 	z-index: 5000;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
 	justify-content: space-between;
     height: 100px;
@@ -48,7 +54,10 @@ body{
 }
 #header .header_content{
 	flex: 1 0 100px;
-	 display:flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -73,14 +82,19 @@ body{
 	margin: 0 auto;
 	
 	min-height: 530px;
+	height: auto;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
 }
 #content1 .about_us{
-	flex: 0 0 290px;
+	flex: 0 0 100%;
 	max-width: 840px;
+	min-height: 290px;
 	display: flex;
 	flex-direction: column;
 	color: black;
@@ -97,7 +111,10 @@ body{
 	text-align: center;
 	text-transform: uppercase;
 	background-color: #ffffff;
-	display:flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -107,20 +124,28 @@ body{
     font-weight: 600;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    z-index: 100;
     
 }
 .title .title-content{
 	width: 380px;
 	height:100px;
 	border-bottom:1px outset #d5d5d5;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
 	align-items:center;
 	justify-content: center;
 }
 .about_us .description{
-	flex: 1 0 100px;
+	flex: 0 0 100%;
+	min-height: 190px;
 	background-color: #ffffff;
-	display:flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -133,7 +158,11 @@ body{
 }
 
 #content1 .icons{
-	flex: 0 0 240px;
+	flex: 0 0 100%;
+	min-height: 240px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
 	flex-direction: row;
 	color: black;
@@ -142,6 +171,9 @@ body{
 }
 .icons .icon{
 	flex: 0 0 171px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
 	flex-flow: column;
 	justify-content: space-between;
@@ -151,6 +183,9 @@ body{
 	flex: 0 0 171px;
 	width: 171px;
 	background-color: white;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -169,6 +204,9 @@ body{
 	margin: 0 auto;
 	
 	min-height: 470px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
