@@ -71,21 +71,45 @@ a{
 	max-width: 100%;
 }
 .album_title{
-	font-size: 22px;
+	font-size: 18px;
 	font-weight: 600;
+	text-align: center;
+	padding: 10px 0;
+	color:#841717;
+	text-transform: uppercase;
+}
+.album_date{
+	text-align: right;
+	font-size: 14px;
+	padding-right: 10px;
 }
 .album_description{
 	display:block;
 	max-width: 100%;
 	text-decoration: none;
+	width: 96%;
+	margin: 0 auto;
+	padding: 5px 0;
 }
 .album_tags_item{
 	float: left;
 	padding-right: 10px;
 	font-weight: 600;
+	padding: 5px 5px;
+	text-decoration: underline;
+	font-size: 14px;
 
 }
-
+.thisalbum{
+	width: 90%;
+	margin: 0 auto;
+}
+.thisalbum_photo{
+	width: 100%
+}
+.thisalbum_photo img{
+	width: 100%;
+}
 .search_title{
 	font-size: 20px;
 }
