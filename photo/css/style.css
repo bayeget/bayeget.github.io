@@ -1,0 +1,152 @@
+body{
+	background: #f5f5f5;
+}
+a{
+	text-decoration: none;
+	color: #3c3939;
+}
+#app{
+	max-width: 80%;
+	margin:0 auto;
+}
+#header{
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 200px;
+}
+.header_logo{
+	flex: 0 0 100px;
+	min-width: 300px;
+	background: url('../img/logo.png') no-repeat;
+	background-size: contain;
+}
+.header_menu{
+	flex: 0 0 50px;
+	display: flex;
+	align-items: center;
+}
+.header_menu_item{
+	padding: 0 10px;
+}
+.header_menu_item:hover{
+	color:black;		
+}
+
+.album_card { 
+	max-width: 100%;
+	margin:20px auto;
+	
+}
+
+.album_item {
+	width: 15%;
+	float: left;
+	min-height: 300px;
+	margin: 0 auto;
+	background: #fff;
+	
+	margin-bottom: 30px;
+
+}
+.album_sizer{
+	width: 15%;
+}
+.gutter-sizer { width: 1%; }
+.album_img{
+	display:block;
+	max-width: 100%;
+}
+.album_img:hover{
+	filter: progid: DXImageTransform.Microsoft.Alpha(opacity=80); 
+	opacity: 0.8; 
+	filter: alpha(opacity=80);
+	transition: all 200ms ease-in-out;
+}
+.album_item img{
+	display:block;
+	max-width: 100%;
+}
+.album_title{
+	font-size: 22px;
+	font-weight: 600;
+}
+.album_description{
+	display:block;
+	max-width: 100%;
+	text-decoration: none;
+}
+.album_tags_item{
+	float: left;
+	padding-right: 10px;
+	font-weight: 600;
+
+}
+
+.search_title{
+	font-size: 20px;
+}
+.thisalbum_title{
+	width: 300px;
+}
+.search_exit{
+	color:red;
+}
+
+@media screen and (max-width: 1499px) {
+	.album_item {
+	width: 24%;
+}
+.album_sizer{
+	width: 24%;
+}
+}
+
+@media screen and (max-width: 1099px) {
+	#app{
+		max-width: 95%;
+		
+	}
+	.album_card { 
+		margin:20px 0 20px 80px;
+		
+	}
+
+	.album_item {
+		width: 29%;
+	}
+	.album_sizer{
+		width: 29%;
+	}
+}
+
+@media screen and (max-width: 880px) {
+	#app{
+		max-width: 95%;
+		
+	}
+	.album_card { 
+		margin:20px auto;
+		
+	}
+
+	.album_item {
+		width: 49%;
+	}
+	.album_sizer{
+		width: 49%;
+	}
+}
+
+
+@media screen and (max-width: 479px) {
+	.album_item {
+		width: 100%;
+	}
+	.album_sizer{
+		width: 100%;
+	}	
+}
