@@ -386,7 +386,8 @@ video.bgvid {position: absolute; right: 0; bottom: 0; min-width: 100%; min-heigh
 }
 @media screen and (max-width: 992px) {
     .ris img{width: 90%; height: auto; margin-top: 1%;position: relative;}
-    .reviews img{width: 600px;}
+    .reviews{width:800px;}
+    .reviews img{height: 500px; width: auto; margin-top: 1%;position: relative;}
 	.mobile-icon {display: block;}
     .main-title h1 {font-size: 40px;}
 	header {height: 80px;}
@@ -426,10 +427,12 @@ video.bgvid {position: absolute; right: 0; bottom: 0; min-width: 100%; min-heigh
 }
 @media screen and (max-width: 768px) {
     .gallery .item {width: 50%;}
+    .reviews{width: 100%}
+    .reviews img{ width: auto; height: 500px; margin-top: 1%;position: relative;}
 }
 @media screen and (max-width: 600px) {
-    .reviews img{width: 500px;}
-    .item {width: 100%; margin: 0px;}
+    
+    .item {height:450px; margin: 0px;}
     .grid-sizer {width: 1%;}
     .fillters {margin-left: 0px;}
     .main-title h1 {font-size: 40px;}
@@ -453,10 +456,10 @@ video.bgvid {position: absolute; right: 0; bottom: 0; min-width: 100%; min-heigh
         }
 }
 @media screen and (max-width: 500px) {
-    .reviews img{width: 400px;}
+    .reviews img{width: auto; height: 330px;}
     }
 @media screen and (max-width: 400px) {
-    .reviews img{width: 350px;}
+    .reviews img{width: 100%; height: auto;}
     .item h2 {font-size: 16px; padding-left: 15px;}
     .main-title h1 {font-size: 28px;}
 }
