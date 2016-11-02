@@ -424,6 +424,7 @@ video.bgvid {position: absolute; right: 0; bottom: 0; min-width: 100%; min-heigh
     .about-bg {height: 100%;}
     .about-page {margin-top: 0px;}
     h3{font-size: 14px;}
+    #scrollup img{ width: 30px;}
 }
 @media screen and (max-width: 768px) {
     .gallery .item {width: 50%;}
