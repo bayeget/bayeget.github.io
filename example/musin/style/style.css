@@ -2,6 +2,7 @@ body{
 	margin: 0;
 	padding: 0;
 	font-family: Arial;
+	color: #484848;
 }
 a{
 	text-decoration: none;
@@ -188,8 +189,12 @@ a{
 	background: #fd9e39;
 }
 .slider_nextArrow{
-	width: 80%;
-	margin: 0 auto;
+	height: 100%;
+	width: 100%;
+	top: 0%;
+	z-index: 5000;
+	position: absolute;
+	display: block;
 }
 .nextArrow{
 	height: 100%;
@@ -204,7 +209,86 @@ a{
 	margin: 0 10px;
 }
 
+.contacts{
+	max-width: 1200px;
+	margin:0 auto;
+	display: flex;
+	justify-content: space-between;
+	line-height: 20px;
+	font-size: 14px;
+	padding: 40px 0 0 0;
+	border-top: solid 2px rgba(42, 42, 42, 0.6);
+}
+.contacts_ava{
+	flex: 0 0 49%;
+}
+.contacts_ava img{
+	width: 100%;
+}
+.contacts_info{
+	flex: 0 0 49%;
+	padding: 60px 0 0 0;
+	display: flex;
+	flex-flow: column;
+
+}
+.conatacts_about{
+	flex: 0 0 100px;
+}
+.contacts_title{
+	font-weight: 600;	
+}
+.contacts_form{
+	flex:1 0 100px;
+	display: flex;
+	flex-flow: column;
+	padding: 20px 0 0 0;
+	justify-content: space-around;
+	width: 100%;
+	margin: 0 0 10px 0;
+}
+.input_folder{
+	flex: 0 0 45px;
+	padding: 0 0 0 20px;
+	margin: 20px 0 0 0;
+	background: #e6e6e6;
+	border: none;
+}
+
+
+.input_text{
+	flex: 1 0 50px;
+	padding: 20px 0 0 20px;
+	margin: 20px 0 0 0;
+	border: none;
+	background: #e6e6e6;
+	font-family: arial;
+	font-size: 14px;
+}
+.input_button{
+	flex: 0 0 45px;
+	padding: 0 0 0 20px;
+	margin: 20px 0 0 0;
+	background: #484848;
+	color: white;
+	border: none;
+	cursor: pointer;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+
+
+
+
 @media screen and (max-width: 1499px) {
+	.contacts, #header{
+		max-width: 85%;
+	}
+	.contacts_info{
+		padding: 0;
+	}
+}
 	
 
 
@@ -217,14 +301,28 @@ a{
 	.thisalbum{
 		width: 100%;
 	}
+	.contacts_form{
+		padding: 0;
+	}
 	
 }
 
 @media screen and (max-width: 880px) {
-	#app{
+	#app, #header{
 		max-width: 95%;
 		
 	}
+
+	.header_menu_item{
+		font-size: 14px;
+	}
+
+	.contacts{
+		max-width: 95%;
+		flex-flow: column;
+	}
+
+
 	.album_card { 
 		margin:20px auto;
 		
@@ -237,6 +335,20 @@ a{
 		width: 49%;
 	}
 }
+/* @media screen and (max-width: 580px) {
+	#header{
+		flex-flow: row;
+		min-height: 100px;
+		justify-content: space-between; 
+	}
+	.header_logo{
+		min-width: 150px;
+		max-height: 100px;
+	}
+	.header_menu{
+		
+	}
+} */
 
 
 @media screen and (max-width: 479px) {

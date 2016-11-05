@@ -34305,6 +34305,10 @@
 
 	var _Search2 = _interopRequireDefault(_Search);
 
+	var _Contacts = __webpack_require__(558);
+
+	var _Contacts2 = _interopRequireDefault(_Contacts);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var routes = exports.routes = React.createElement(
@@ -34315,7 +34319,8 @@
 	    { path: '/', component: _App2.default },
 	    React.createElement(_reactRouter.IndexRoute, { component: _Gallery2.default }),
 	    React.createElement(_reactRouter.Route, { path: '/albums/:albums', component: _Album2.default }),
-	    React.createElement(_reactRouter.Route, { path: '/search/:search', component: _Search2.default })
+	    React.createElement(_reactRouter.Route, { path: '/search/:search', component: _Search2.default }),
+	    React.createElement(_reactRouter.Route, { path: '/contacts', component: _Contacts2.default })
 	  )
 	);
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(299)))
@@ -34353,6 +34358,25 @@
 
 	  _createClass(App, [{
 	    key: 'render',
+
+	    /*componentDidMount () {
+	      var header = document.getElementById('header');
+	      window.onscroll = function() {
+	          var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+	          // console.log(scrolled + 'px');
+	          
+	          if (scrolled>10) {
+	          header.style.height='100px';
+	          header.style.flex-flow='row';
+	          header.style.justify-content='space-beetween';   
+	           
+	        }
+	        else{
+	          header.style.height='200px';  
+	        }
+	      };
+	    };  */
+
 	    value: function render() {
 	      return React.createElement(
 	        'div',
@@ -34381,7 +34405,7 @@
 	            ),
 	            React.createElement(
 	              _reactRouter.Link,
-	              { className: 'header_menu_item', to: '/' },
+	              { className: 'header_menu_item', to: '/contacts' },
 	              '\u041A\u043E\u043D\u0442\u0430\u043A\u0442\u044B'
 	            )
 	          )
@@ -47797,7 +47821,7 @@
 		displayName: 'SampleNextArrow',
 
 		render: function render() {
-			return React.createElement('div', _extends({}, this.props, { className: 'nextArrow' }));
+			return React.createElement('div', _extends({}, this.props, { className: 'slider_nextArrow' }));
 		}
 	});
 
@@ -50314,6 +50338,112 @@
 	}(_react.Component);
 
 	exports.default = AlbumCard;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(299)))
+
+/***/ },
+/* 558 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(React) {"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(299);
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Contacts = function (_Component) {
+		_inherits(Contacts, _Component);
+
+		function Contacts() {
+			_classCallCheck(this, Contacts);
+
+			return _possibleConstructorReturn(this, (Contacts.__proto__ || Object.getPrototypeOf(Contacts)).apply(this, arguments));
+		}
+
+		_createClass(Contacts, [{
+			key: "render",
+			value: function render() {
+				return React.createElement(
+					"div",
+					{ className: "contacts" },
+					React.createElement(
+						"div",
+						{ className: "contacts_ava" },
+						React.createElement("img", { src: "img/ava.jpg" })
+					),
+					React.createElement(
+						"div",
+						{ className: "contacts_info" },
+						React.createElement(
+							"div",
+							{ className: "conatacts_about" },
+							React.createElement(
+								"div",
+								{ className: "contacts_title" },
+								"\u041C\u043E\u0438 \u043A\u043E\u043D\u0442\u0430\u043A\u0442\u044B:"
+							),
+							React.createElement(
+								"div",
+								{ className: "contacts_adress" },
+								"\u0420\u043E\u0441\u0441\u0438\u044F, \u0420\u0435\u0441\u043F\u0443\u0431\u043B\u0438\u043A\u0430 \u0411\u0430\u0448\u043A\u043E\u0440\u0442\u043E\u0441\u0442\u0430\u043D, \u0433\u043E\u0440\u043E\u0434 \u0421\u0438\u0431\u0430\u0439"
+							),
+							React.createElement(
+								"div",
+								{ className: "contacts_telephone" },
+								"\u0422\u0435\u043B\u0435\u0444\u043E\u043D/WhatsApp: +7 (927) 957-97-30"
+							),
+							React.createElement(
+								"div",
+								{ className: "contacts_email" },
+								"E-mail: light_book@mail.ru"
+							),
+							React.createElement(
+								"div",
+								{ className: "contacts_inst" },
+								"Instagram: yangir_musin"
+							),
+							React.createElement(
+								"div",
+								{ className: "contacts_vk" },
+								"\u0412\u043A\u043E\u043D\u0442\u0430\u043A\u0442\u0435: ",
+								React.createElement(
+									"a",
+									{ href: "https://vk.com/yangir_musin" },
+									"\u042F\u043D\u0433\u0438\u0440 \u041C\u0443\u0441\u0438\u043D"
+								)
+							)
+						),
+						React.createElement(
+							"form",
+							{ className: "contacts_form", onSubmit: this.handleSubmit },
+							React.createElement("input", { type: "text", className: "input_folder", placeholder: "\u0424\u0430\u043C\u0438\u043B\u0438\u044F" }),
+							React.createElement("input", { type: "text", className: "input_folder", placeholder: "\u0418\u043C\u044F" }),
+							React.createElement("input", { type: "text", className: "input_folder", placeholder: "E-mail" }),
+							React.createElement("textarea", { className: "input_text", name: "comment", cols: "40", rows: "3", placeholder: "\u0421\u043E\u043E\u0431\u0449\u0435\u043D\u0438\u0435" }),
+							React.createElement(
+								"button",
+								{ type: "submit", className: "input_button" },
+								"\u041E\u0442\u043F\u0440\u0430\u0432\u0438\u0442\u044C"
+							)
+						)
+					)
+				);
+			}
+		}]);
+
+		return Contacts;
+	}(_react.Component);
+
+	exports.default = Contacts;
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(299)))
 
 /***/ }
