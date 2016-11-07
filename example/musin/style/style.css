@@ -8,10 +8,6 @@ a{
 	text-decoration: none;
 	color: #484848;
 }
-.container{
-	max-width: 1200px;
-	margin: 0 auto;
-}
 
 
 #header{
@@ -23,6 +19,18 @@ a{
 	align-items: center;
 	min-height: 200px;
 }
+/* #header{
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 200px;
+	position: fixed;
+	top: 0;
+	z-index: 5001;
+} */
 .header_logo{
 	flex: 0 0 100px;
 	min-width: 300px;
@@ -45,7 +53,10 @@ a{
 .header_menu_item:hover{
 	color: #fd9e39;		
 }
-
+.main_gallery{
+	max-width: 1200px;
+	margin: 0 auto;
+}
 .album_card { 
 	max-width: 1200px;
 	margin:20px auto;
@@ -144,6 +155,11 @@ a{
 	font-size: 14px;
 
 }
+.bg_image{
+	width: 100%;
+	height: 600px;
+	background: url('../img/2.jpg');
+}
 .thisalbum{
 	width: 80%;
 	margin: 0 auto;
@@ -167,7 +183,7 @@ a{
 .main_slider{
   margin: 0 auto;
   padding: 40px 0 40px 0;
-  width: 1600px;
+  max-width: 1600px;
   color: #333;
  
 }
@@ -295,7 +311,7 @@ a{
 
 
 @media screen and (max-width: 1499px) {
-	.contacts, #header{
+	.contacts, #header, .main_gallery{
 		max-width: 85%;
 	}
 	.contacts_info{
@@ -321,7 +337,7 @@ a{
 }
 
 @media screen and (max-width: 880px) {
-	#app, #header{
+	#app, #header, .main_gallery{
 		max-width: 95%;
 		
 	}
