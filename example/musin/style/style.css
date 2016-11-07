@@ -166,8 +166,8 @@ a{
 
 .main_slider{
   margin: 0 auto;
-  padding: 40px;
-  width: 80%;
+  padding: 40px 0 40px 0;
+  width: 1600px;
   color: #333;
  
 }
