@@ -1,0 +1,111 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Ubuntu', sans-serif;
+	
+}
+a{
+	text-decoration: none;
+	color: #4b4a4a;
+}
+
+#header{
+	position: fixed;
+	top: 20px;
+	width: 800px;
+	height: 80px;
+	left: 50%;
+	margin-left: -400px;
+	background: rgba(0, 0, 0, 0.5);
+	color: white;
+}
+#header .menu{
+	position: relative;
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	align-items: center;
+	height: 80px;
+}
+#header .menu .menu_item{
+	flex: 1 0 100px;
+	text-align: center;
+}
+
+
+#step1{
+	height: 100vh;
+	width: 100vw;
+	background: #f4f4f4;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.vote{
+	flex:0 0 400px;
+	height: 400px;
+	border: 2px solid white;
+	display: flex;
+	justify-content: center;
+	align-items: end;
+	cursor: pointer;
+}
+#step1 .vote1{
+	background: url(../img/main/index1.jpg);
+	background-size: cover;
+	transition: 0.5s;
+
+}
+#step1 .vote1:hover{
+	background-position: bottom;
+}
+
+#step1 .vote2{
+	background: url(../img/main/index2.jpg);
+	background-size: cover;
+	transition: 0.5s;
+}
+#step1 .vote2:hover{
+	background-position: bottom;
+}
+#step1 .vote3{
+	background: url(../img/main/index3.jpg);
+	background-size: cover;
+	transition: 2s;
+}
+#step1 .vote3:hover{
+	background-position: bottom;
+}
+.vote .vote_name{
+	position: relative;
+	bottom: -50px;
+	text-align: center;
+}
+
+#step2{
+	height: 100vh;
+	width: 100vw;
+	background: #989898;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+#step2 .vote1{
+	background: url(../img/main/gallery1.jpg);
+	background-size: cover;
+	transition: 2s;
+
+}
+#step2 .vote1:hover{
+	background-position: bottom;
+}
+
+#step2 .vote2{
+	background: url(../img/main/index2.jpg);
+	background-size: cover;
+	transition: 0.5s;
+}
+#step2 .vote2:hover{
+	background: url(../img/main/index1.jpg);
+	background-size: cover;
+}

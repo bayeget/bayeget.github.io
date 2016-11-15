@@ -155,13 +155,16 @@ a{
 	font-size: 14px;
 
 }
-.bg_image{
-	width: 100%;
-	height: 600px;
-	background: url('../img/2.jpg');
+.albumimage{
+	max-width: 1200px;
+	position: relative;
+	
+	margin: 0 auto;
+	font-size: 14px;
 }
+
 .thisalbum{
-	width: 80%;
+	width: 100%;
 	margin: 0 auto;
 }
 .thisalbum_photo{
@@ -174,6 +177,9 @@ a{
 	font-size: 20px;
 }
 .thisalbum_title{
+	
+}
+.thisalbum_description{
 	width: 300px;
 }
 .search_exit{
@@ -233,7 +239,7 @@ a{
 	line-height: 20px;
 	font-size: 14px;
 	padding: 40px 0 0 0;
-	border-top: solid 2px rgba(42, 42, 42, 0.6);
+	
 }
 .contacts_ava{
 	flex: 0 0 49%;
@@ -292,20 +298,68 @@ a{
 	font-size: 20px;
 	text-transform: uppercase;
 }
-.portfolio{
+.portfolio_page{
+	position: relative;
 	max-width: 1200px;
 	margin: 0 auto;
+}
+.portfolio{
+	
 	display: flex;
 	justify-content: space-between;
 	flex-flow: row wrap;
-	border-top: solid 2px rgba(42, 42, 42, 0.6);
+	
 	padding: 30px 0 0 0;
 }
 .portfolio_img{
 	flex: 0 0 100px;
 	
 }
-
+.nextalbum{
+	position: fixed;
+  bottom: 50vh;
+	height: 40px;
+	width: 40px;
+  right: 50px;
+  cursor: pointer;
+  background: url('../img/icons/right.png');
+  background-size: 	cover;
+  transition: 0.5s;
+  border-radius: 40px;
+  border: 2px solid rgba(255, 255, 255, 0); 
+  opacity: 0.5;
+}
+.nextalbum:hover{
+	border-radius: 40px;
+	border: 2px solid #484848; 
+	opacity: 1;
+}
+.prevalbum{
+	position: fixed;
+  bottom: 50vh;
+  height: 40px;
+	width: 40px;
+  left:  50px;
+  cursor: pointer;
+   background: url('../img/icons/left.png');
+  background-size: 	cover;
+  transition: 0.5s;
+  border-radius: 40px;
+  border: 2px solid rgba(255, 255, 255, 0); 
+  opacity: 0.5;
+  
+}
+.prevalbum:hover{
+	border-radius: 40px;
+	border: 2px solid #484848; 
+	opacity: 1;
+}
+.scrollup{
+	height: 40px;
+	width: 40px;
+	background: url('../img/icons/up.png');
+  	background-size: 	cover;
+}
 
 
 
