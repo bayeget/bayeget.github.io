@@ -1,6 +1,10 @@
 $(function() {
+	$("[href=#]").click(function(event){
+        event.preventDefault();
+    });
 	/* Меню */
 	$( ".nav-menu-icon" ).click(function() {
+
 	  	if ($(".nav-main-menu").hasClass('active-menu')) {
 	  		$(".nav-main-menu").removeClass("active-menu")
 	  		$(this).removeClass("active-menu-icon")
@@ -22,9 +26,63 @@ $(function() {
         direction: 'vertical',
         mousewheelControl: true,
         speed: 1000,
-        loop: true,
-        lazyLoading: true
-    })        
+        loop: true
+    });
+
+	/*isotope */
+
+    var $grid = $('.grid').isotope({
+	  // options
+	  percentPosition: true,
+	  itemSelector: '.grid-item',
+	  masonry: {
+	    columnWidth: '.grid-sizer'
+	  }
+	});
+	$('.filter-button-group').on( 'click', 'button', function() {
+	  var filterValue = $(this).attr('data-filter');
+	  $grid.isotope({ filter: filterValue });
+	});  
+		/* fade meny*/
+	var tempScrollTop = 0;
+	var currentScrollTop = 0;
+        
+	jQuery(window).scroll(function(){
+		if ( jQuery(document).scrollTop() > 200 ){
+			currentScrollTop = jQuery(window).scrollTop();
+
+			if (tempScrollTop < currentScrollTop ){
+				jQuery('.header').fadeOut('fast');
+			}
+			//scrolling down
+			else if (tempScrollTop > currentScrollTop ){
+				jQuery('.header').fadeIn('fast');
+			}
+			//scrolling up
+			tempScrollTop = currentScrollTop;
+		}
+      
+    });
+    var screen_width = jQuery(window).width();
+    
+	jQuery( document ).ready(function() {
+		if(screen_width > 768) {
+		    jQuery('#scrollup').click( function(){
+		        jQuery('html, body').animate({scrollTop: 0},500);
+		        return false;
+		    });
+
+		    jQuery(window).scroll(function(){
+		        if ( jQuery(document).scrollTop() > 200 ) {
+		            jQuery('#scrollup').fadeIn('fast');
+		        } else {
+		            jQuery('#scrollup').fadeOut('fast');
+		        }
+		    });
+		};
+	});
+
+
 
 	//SVG Fallback
 	if(!Modernizr.svg) {

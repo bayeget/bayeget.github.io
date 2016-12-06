@@ -5,7 +5,7 @@
 
 	<meta charset="utf-8">
 
-	<title>Дарья Жукова - Фотограф</title>
+	<title>Галерея</title>
 	<meta name="description" content="Жукова Дарья - сайт фотографа">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -41,7 +41,7 @@
 
 <body>
 
-	<header class="header">
+	<header>
 		<div class="main-logo">
 			<a href="index.html"><img src="img/header/logo.png" alt="Дарья Жукова - Фотограф"></a>
 		</div>
@@ -61,91 +61,47 @@
 			<li><a href="#">Контакты</a></li>
 		</ul>
 	</div>
-	
-	<div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-            	<a href="#">
-            		<div class="slider-bg bg1"></div>
-            		<div class="slider-title">Свадьбы</div>
-            	</a>
-            </div>
-            <div class="swiper-slide">
-            	<a href="#">
-            		<div class="slider-bg bg2"></div>
-            		<div class="slider-title">Никах</div>
-            	</a>
-            </div>
-            <div class="swiper-slide">
-            	<a href="#">
-            		<div class="slider-bg bg3"></div>
-            		<div class="slider-title">Портреты</div>
-            	</a>
-            </div>
-            <div class="swiper-slide">
-            	<a href="#">
-            		<div class="slider-bg bg4"></div>
-            		<div class="slider-title">Семья</div>
-            	</a>
-            </div>
-            <div class="swiper-slide">
-            	<a href="#">
-            		<div class="slider-bg bg5"></div>
-            		<div class="slider-title">Love-story</div>
-            	</a>
-            </div>
-            <div class="swiper-slide">
-            	<a href="#">
-            		<div class="slider-bg bg6"></div>
-            		<div class="slider-title">Другое</div>
-            	</a>
-            </div>
-           
-        </div>
-        
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
-</div>
-<div class="swiper-container-md">
-	<div class="space"></div>
+	<div class="container">
+		<div class="container-title">
+			<h3>Галерея</h3>
+		</div>	
+		<div class="button-group filter-button-group">
+			<button data-filter="*">Все</button>
+			<button data-filter=".wedding">Свадьба</button>
+			<button data-filter=".nikah">Никах</button>
+			<button data-filter=".portret">Портрет</button>
+			<button data-filter=".family">Семья</button>
+			<button data-filter=".lovestory">Love story</button>
+			<button data-filter=".other">Другое</button>
+		</div>
+		<div class="grid">
+			<div class="grid-sizer"></div>
 
-    <div class="swiper-slide">
-    	<a href="#">
-        	<img src="img/main_page/wedding.jpg" alt="Свадьбы">
-            <div class="slider-title">Свадьбы</div>
-		</a>
-    </div>
-	<div class="swiper-slide">
-    	<a href="#">
-			<img src="img/main_page/nikah.jpg" alt="Никах">
-            <div class="slider-title">Никах</div>
-		</a>
+			<div class="grid-item wedding">
+				<a href="#">
+					<img src="img/main_page/wedding.jpg" alt="">
+					<div class="grid-item-title">Альфира и Берик</div>
+				</a>
+			</div>
+			<div class="grid-item nikah">
+				<a href="aigul_alik.html">	
+					<img src="img/gallery/aigul_alik/3.jpg" alt="">
+					<div class="grid-item-title">Айгуль и Алик</div>
+				</a>
+			</div>
+			<div class="grid-item portret">
+				<a href="#">
+					<img src="img/main_page/portret.jpg" alt="">
+					<div class="grid-item-title">Варвара</div>
+				</a>
+			</div>
+			
+		  
+		</div>
+
+
 	</div>
-    <div class="swiper-slide">
-    	<a href="#">
-        	<img src="img/main_page/portret.jpg" alt="Портреты">
-            <div class="slider-title">Портреты</div>
-		</a>
-	</div>
-    <div class="swiper-slide">
-    	<a href="#">
-        	<img src="img/main_page/family.jpg" alt="Семья">
-            <div class="slider-title">Семья</div>
-		</a>
-	</div>
-    <div class="swiper-slide">
-    	<a href="#">
-        	<img src="img/main_page/lovestory.jpg" alt="love-story">
-            <div class="slider-title">Love-story</div>
-		</a>
-    </div>
-    <div class="swiper-slide">
-    	<a href="#">
-        	<img src="img/main_page/other.jpg" alt="Другое">
-            <div class="slider-title">Другое</div>
-		</a>
-	</div>
-</div>
+
 <footer >
 	<div class="copyright">
     	<div class="footer-social-icon">
