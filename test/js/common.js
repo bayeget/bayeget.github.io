@@ -1,3 +1,5 @@
+
+	
 $(function() {
 	$("[href=#]").click(function(event){
         event.preventDefault();
@@ -81,9 +83,33 @@ $(function() {
 		    });
 		};
 	});
+	/* animated */
+	$('.fadeinan').click(function() {
+	    $('body').addClass('animated zoomOut');
+	});
 
+	if(jQuery(".animsition").length){
+	   jQuery(".animsition").animsition({
+		inClass               :   'zoom-in-sm',
+		outClass              :   'zoom-out-sm',
+		inDuration            :    800,
+		outDuration           :    800,
+		linkElement           :   '.animsition-link',
+		   // e.g. linkElement   :   'a:not([target="_blank"]):not([href^=#])'
+		loading               :    true,
+		loadingParentElement  :   'body', 
+		loadingClass          :   'animsition-loading',
+		unSupportCss          : [ 'animation-duration',
+								  '-webkit-animation-duration',
+								  '-o-animation-duration'
+								],
+		overlay               :   false,
 
-
+		overlayClass          :   'animsition-overlay-slide',
+		overlayParentElement  :   'body'
+	  });
+	}
+	
 	//SVG Fallback
 	if(!Modernizr.svg) {
 		$("img[src*='svg']").attr("src", function() {
@@ -110,3 +136,5 @@ $(function() {
 	});
 
 });
+
+
