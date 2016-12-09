@@ -55,10 +55,13 @@ $(function() {
 
 			if (tempScrollTop < currentScrollTop ){
 				jQuery('.header').fadeOut('fast');
+				jQuery('.nav-main-menu').fadeOut('fast');
+
 			}
 			//scrolling down
 			else if (tempScrollTop > currentScrollTop ){
 				jQuery('.header').fadeIn('fast');
+				jQuery('.nav-main-menu').fadeIn('fast');
 			}
 			//scrolling up
 			tempScrollTop = currentScrollTop;
