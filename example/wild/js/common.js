@@ -103,31 +103,6 @@ $(function() {
 		    });
 		}
 	})
-	$('.title-bg3').change(function(){
-	  alert('Элемент foo был изменен.');
-	});
-	$(document).ready(function () {
-		if ($(".slide3").hasClass('swiper-slide-active')) {
-			$(".header").fadeOut('normal')
-			alert('Привет')
-		}
-	})
-	var tempScrollTop = 0;
-	var currentScrollTop = 0;
-	jQuery(window).scroll(function(){
-		if ( jQuery(document).scrollTop() > 880 ){
-			currentScrollTop = jQuery(window).scrollTop();
-			if (tempScrollTop > currentScrollTop ){
-				if ( jQuery(document).scrollTop() < 880 ){
-					jQuery('html, body').animate({scrollTop: 0},500);
-					return false;
-				}
-
-			}
-			tempScrollTop = currentScrollTop;
-			 
-		}
-      
-    });
+	
 
 });
