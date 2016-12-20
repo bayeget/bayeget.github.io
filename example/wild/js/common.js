@@ -1,4 +1,44 @@
 $(function() {
+	
+	$("[href=#]").click(function(event){
+        event.preventDefault();
+    });
+    $("[href=#about]").click(function(event){
+    	event.preventDefault();
+    	
+        $("html,body").animate({scrollTop: ($(about).offset().top)}, 1000);;
+    });
+    $("[href=#actors]").click(function(event){
+    	event.preventDefault();
+
+        $("html,body").animate({scrollTop: ($(actors).offset().top)}, 1000);;
+    });
+    $("[href=#trailer]").click(function(event){
+    	event.preventDefault();
+
+        $("html,body").animate({scrollTop: ($(trailer).offset().top)}, 1000);;
+    });
+    $("[href=#backstage]").click(function(event){
+    	event.preventDefault();
+
+        $("html,body").animate({scrollTop: ($(backstage).offset().top)}, 1000);;
+    });
+    $("[href=#stills]").click(function(event){
+    	event.preventDefault();
+
+        $("html,body").animate({scrollTop: ($(stills).offset().top)}, 1000);;
+    });
+    $("[href=#adwards]").click(function(event){
+    	event.preventDefault();
+
+        $("html,body").animate({scrollTop: ($(adwards).offset().top)}, 1000);;
+    });
+    $("[href=#about_crew]").click(function(event){
+    	event.preventDefault();
+
+        $("html,body").animate({scrollTop: ($(about_crew).offset().top)}, 1000);;
+    });
+
 
 	//SVG Fallback
 	if(!Modernizr.svg) {
@@ -72,5 +112,22 @@ $(function() {
 			alert('Привет')
 		}
 	})
+	var tempScrollTop = 0;
+	var currentScrollTop = 0;
+	jQuery(window).scroll(function(){
+		if ( jQuery(document).scrollTop() > 880 ){
+			currentScrollTop = jQuery(window).scrollTop();
+			if (tempScrollTop > currentScrollTop ){
+				if ( jQuery(document).scrollTop() < 880 ){
+					jQuery('html, body').animate({scrollTop: 0},500);
+					return false;
+				}
+
+			}
+			tempScrollTop = currentScrollTop;
+			 
+		}
+      
+    });
 
 });
