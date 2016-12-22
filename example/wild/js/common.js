@@ -38,7 +38,23 @@ $(function() {
 
         $("html,body").animate({scrollTop: ($(about_crew).offset().top)}, 1000);;
     });
+    /*lightgallery started*/
+    $("#lightgallery").lightGallery(); 
+    $(".content-page-backstage-show").click(function() {
+    	var chil = $("#lightgallery").children("a")
+    	console.log(chil)
+    	if ($("#lightgallery").children("a").hasClass('hidden')) {
+    		$("#lightgallery").children("a").removeClass('hidden')
+    		$('.content-page-backstage-show').addClass('hidden')
+    	}
+    	
+    })
 
+    $(".content-page-actors-actor").click(function() {
+    	$(this).toggleClass('show-actors')
+    })
+    
+   
 
 	//SVG Fallback
 	if(!Modernizr.svg) {
@@ -77,9 +93,7 @@ $(function() {
         	autoplayStopOnLast: true,
         	effect: "fade",
         	slideToClickedSlide: true,
-        	keyboardControl: true,
-        	mousewheelControl: true,
-        	direction: 'vertical'
+        	keyboardControl: true
 	    })        
 	  });
 	var winHeight = $(window).height()
