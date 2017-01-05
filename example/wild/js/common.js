@@ -49,9 +49,13 @@ $(function() {
     	}
     	
     })
+    $('#html5-videos').lightGallery({
+    	videojs: true
+    }); 
 
     $(".content-page-actors-actor").click(function() {
     	$(this).toggleClass('show-actors')
+    	$('body').toggleClass('overflow-hidden')
     })
     
    
