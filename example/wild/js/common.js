@@ -33,6 +33,11 @@ $(function() {
 
         $("html,body").animate({scrollTop: ($(adwards).offset().top)}, 1000);;
     });
+    $("[href=#partners]").click(function(event){
+    	event.preventDefault();
+
+        $("html,body").animate({scrollTop: ($(partners).offset().top)}, 1000);;
+    });
     $("[href=#about_crew]").click(function(event){
     	event.preventDefault();
 
@@ -49,6 +54,20 @@ $(function() {
     	}
     	
     })
+    $('#lightSlider').lightSlider({
+		gallery:true,
+        item: 1,
+        loop: true,
+        thumbItem: 9,
+        slideMargin: 0,
+        enableDrag: false,
+        currentPagerPosition:'left',
+	    onSliderLoad: function(el) {
+            el.lightGallery({
+                selector: '#lightSlider .lslide'
+            });
+        }   
+	});
     $('#html5-videos').lightGallery({
     	videojs: true
     }); 
@@ -99,6 +118,7 @@ $(function() {
         	slideToClickedSlide: true,
         	keyboardControl: true
 	    })        
+	    
 	  });
 	var winHeight = $(window).height()
 	$(window).scroll(function(){
