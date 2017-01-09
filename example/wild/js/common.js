@@ -45,6 +45,7 @@ $(function() {
     });
     /*lightgallery started*/
     $("#lightgallery").lightGallery(); 
+    $("#posters").lightGallery();
     $(".content-page-backstage-show").click(function() {
     	var chil = $("#lightgallery").children("a")
     	console.log(chil)
