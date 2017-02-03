@@ -3,6 +3,11 @@ $(function() {
 	$("[href=#]").click(function(event){
         event.preventDefault();
     });
+    $("[href=#premier]").click(function(event){
+        event.preventDefault();
+        
+        $("html,body").animate({scrollTop: ($(premier).offset().top)}, 1000);;
+    });
     $("[href=#about]").click(function(event){
     	event.preventDefault();
     	
@@ -17,6 +22,11 @@ $(function() {
     	event.preventDefault();
 
         $("html,body").animate({scrollTop: ($(trailer).offset().top)}, 1000);;
+    });
+     $("[href=#soundtrack]").click(function(event){
+    	event.preventDefault();
+
+        $("html,body").animate({scrollTop: ($(soundtrack).offset().top)}, 1000);;
     });
     $("[href=#backstage]").click(function(event){
     	event.preventDefault();
@@ -69,17 +79,41 @@ $(function() {
             });
         }   
 	});
-    $('#html5-videos').lightGallery({
-    	videojs: true
-    }); 
+	$('#lightSlider-premier').lightSlider({
+		gallery:true,
+        item: 1,
+        loop: true,
+        thumbItem: 9,
+        slideMargin: 0,
+        enableDrag: false,
+        currentPagerPosition:'left',
+	    onSliderLoad: function(el) {
+            el.lightGallery({
+                selector: '#lightSlider-premier .lslide'
+            });
+        }   
+	});
+	
+   
 
     $(".content-page-actors-actor").click(function() {
     	$(this).toggleClass('show-actors')
     	$('body').toggleClass('overflow-hidden')
     })
     
-   
+   /*audio*/
+   var myCirclePlayer = new CirclePlayer("#jquery_jplayer_1",
+			{
+				m4a: "../audio/soundtrack.m4a",
+				oga: "../audio/soundtrack.ogg"
+				
+			}, {
+				cssSelectorAncestor: "#cp_container_1"
+			});
 
+			// This code creates a 2nd instance. Delete if not required.
+
+	
 	//SVG Fallback
 	if(!Modernizr.svg) {
 		$("img[src*='svg']").attr("src", function() {
@@ -112,12 +146,16 @@ $(function() {
 	      // Optional parameters
 	      	pagination: '.swiper-pagination',
         	paginationClickable: true,
+            paginationType: "progress",
+            watchSlidesProgress: true,
         	speed: 800,
         	autoplay: 5000,
         	autoplayStopOnLast: true,
         	effect: "fade",
         	slideToClickedSlide: true,
-        	keyboardControl: true
+        	keyboardControl: true,
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev'
 	    })        
 	    
 	  });
