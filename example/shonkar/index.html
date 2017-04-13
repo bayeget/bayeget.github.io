@@ -5,7 +5,7 @@
 
 	<meta charset="utf-8">
 
-	<title>Заголовок</title>
+	<title>Шонкар</title>
 	<meta name="description" content="">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,16 +19,17 @@
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
 
 	<!-- Bootstrap v3.3.4 Grid Styles -->
+	
 
 	<!-- Header CSS (First Sections of Website: paste after release from header.min.css here) -->
-	<style>body{font-size:16px;min-width:320px;position:relative;line-height:1.6;font-family:RobotoRegular,sans-serif;overflow-x:hidden;margin:0;padding:0;background:url(../img/main-bg.png);background-color:#f8f2ea}h3{font-size:24px;color:#111}ul{list-style:none}.header{width:100%;height:80px;background-color:#fff;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:space-around;-ms-flex-pack:distribute;justify-content:space-around;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;position:fixed;top:0;left:0}.header-logo{width:200px}.header-logo a{width:100%}.header-logo a img{width:100%}.header-menu{color:#444}.header-menu ul{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:space-around;-ms-flex-pack:distribute;justify-content:space-around}.header-menu ul li{margin:0 50px;cursor:pointer}.content{max-width:1200px;margin:120px auto;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between}.content-news_column{-webkit-box-flex:0;-webkit-flex:0 0 768px;-ms-flex:0 0 768px;flex:0 0 768px}.content-news_column-news_1{background-color:#fff;min-height:200px;margin:0 0 20px 0}.content-news_column-news_2{background-color:#fff;min-height:300px;margin:0 0 20px 0}.content-extra_column{background-color:#fff;height:600px;-webkit-box-flex:0;-webkit-flex:0 0 352px;-ms-flex:0 0 352px;flex:0 0 352px}.hidden{display:none}</style>
+	<style></style>
 
 	<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
 	<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n}function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
 
 	<!-- Load CSS Start -->
 	<script>loadLocalStorageCSS( "webfonts", "css/fonts.min.css?ver=1.0.0" );</script>
-	
+	<script>loadCSS( "css/header.min.css?ver=1.0.0", false, "all" );</script>
 	<script>loadCSS( "css/main.min.css?ver=1.0.0", false, "all" );</script>
 	<!-- Load CSS End -->
 
@@ -41,97 +42,252 @@
 </head>
 
 <body>
-
+	
 	<div class="header">
-		<div class="header-logo">
-			<a href="index.html"><img src="img/logo.png" alt="Шонкар"></a>
+		<!-- <div class="header-top">
+			<div class="header-top-login"><a href="#">Login / Register</a></div>
+			<div class="header-top-search"><i class="fa fa-search" aria-hidden="true"></i></div>
+		</div> -->
+		<div class="header-mid">
+			<div class="header-mid-logo">
+				<img src="img/logo1.png" alt="Шонкар">
+			</div>
 		</div>
-		<div class="header-menu">
-			<ul>
-				<li>Меню1</li>
-				<li>Меню2</li>
-				<li>Меню3</li>
-			</ul>
+		<div class="header-bot">
+			<div class="header-bot-menu">
+				<ul>
+					<li><a href="#">Рубрикалар </a></li>
+					<li><a href="#">Новости </a></li>
+					<li><a href="#">Медиа   </a></li>
+					<li><a href="#">Архив    </a></li>
+					<li><a href="#">Редакция  </a></li>
+					<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+				</ul>
+			</div>
 		</div>
-	</div>
-	<div class="first-screen">
-		
+
 	</div>
 	
+	<div class="swiper-container">
+    <!-- Additional required wrapper -->
+	    <div class="swiper-wrapper">
+	        <!-- Slides -->
+	        <div class="swiper-slide slide1">
+	        	<div class="swiper-slide-content">
+	        		<div class="tag"><span class="media">Рубрика</span></div>
+		        	<div class="other">
+		        		<div class="author">Имя Автора</div>
+		        		<div class="date">Дата публикации</div>
+		        	</div>
+		        	<div class="title">Загаловок публикации</div>
+		        	<div class="description">Краткое писание публикации</div>
+	        	</div>
+	        	
+	        </div>
+	        <div class="swiper-slide slide2">
+				<div class="swiper-slide-content">
+	        		<div class="tag"><span class="sport">Новости</span></div>
+		        	<div class="other">
+		        		<div class="author">John Phillipe</div>
+		        		<div class="date">March 23, 2017</div>
+		        	</div>
+		        	<div class="title">Далеко-далеко за словесными горами в стране.</div>
+		        	<div class="description">Далеко-далеко за словесными горами в стране, гласных и согласных живут.</div>
+	        	</div>
+	        </div>
+	        <div class="swiper-slide slide3">
+				<div class="swiper-slide-content">
+	        		<div class="tag"><span class="news">Новости</span></div>
+		        	<div class="other">
+		        		<div class="author">John Phillipe</div>
+		        		<div class="date">March 23, 2017</div>
+		        	</div>
+		        	<div class="title">Далеко-далеко за словесными горами в стране.</div>
+		        	<div class="description">Далеко-далеко за словесными горами в стране, гласных и согласных живут.</div>
+	        	</div>
+	        </div>
+	        
+	    </div>
+	    <!-- If we need pagination -->
+	    <div class="swiper-pagination"></div>
+	    
+	    <!-- If we need navigation buttons -->
+	    <div class="swiper-button-prev">
+	    	<i class="fa fa-chevron-left" aria-hidden="true"></i>
+	    </div>
+	    <div class="swiper-button-next">
+	    	<i class="fa fa-chevron-right" aria-hidden="true"></i>
+	    </div>
+	    
+	    <!-- If we need scrollbar -->
+	    <div class="swiper-scrollbar"></div>
+	</div>
+
 	<div class="content">
-		<div class="content-news_column">
-			<div class="content-news_column-news_1">
-				<div class="content-news_column-news_1-statistic">
-					<div class="content-news_column-tags"><span class="news">Новости</span></div>
-					<div class="content-news_column-news_1-statistic-date">14 марта 2017</div>
-					<div class="content-news_column-news_1-statistic-views"><i class="fa fa-eye" aria-hidden="true"></i> 127 </div>
-
+		<div class="content-left">
+			<div class="content-left-title">
+				<div class="content-left-title-title">
+					<span>Последние новости</span>
 				</div>
-				<div class="content-news_column-news_1-data">
-					<div class="content-news_column-news_1-data-description">
-						<div class="content-news_column-news_1-data-description-title"><h3>Заголовок новости</h3></div>
-						<div class="content-news_column-news_1-data-description-more">Далеко-далеко за словесными горами в стране, гласных и согласных.</div>
-					</div>					
-					<div class="content-news_column-news_1-data-author">
-						<img src="img/author/minzilya.jpg" alt="">
+				<!-- <div class="content-left-title-tags">
+					<div class="content-left-title-tags-latest active">
+						latest
 					</div>
+					<div class="content-left-title-tags-popular">
+						popular
+					</div>
+				</div> -->
+			</div>
+			<div class="content-left-news">
+				<div class="content-left-news-image">
+					<img src="img/test/1.jpg" alt="">
 				</div>
-				<div class="content-news_column-navigation"></div>
-				
+				<div class="content-left-news-description">
+					<div class="content-left-news-description-title">
+						Заголовок публикации.
+					</div>
+					<div class="content-left-news-description-more">
+						Краткое описание публикации
+					</div>
+					<div class="content-left-news-description-other">
+						<div class="content-left-news-description-other-author">Имя автора</div>
+						<div class="content-left-news-description-other-date">Дата публикации</div>
+						<div class="content-left-news-description-other-view"><i class="fa fa-eye" aria-hidden="true"></i>4</div>
+						<div class="content-left-news-description-other-tags"><span class="news">Рубрика</span></div>
+					</div>					
+				</div>
+			</div>
+			<div class="content-left-news">
+				<div class="content-left-news-image">
+					<img src="img/eat/1.jpg" alt="">
+				</div>
+				<div class="content-left-news-description">
+					<div class="content-left-news-description-title">
+						Lorem ipsum dolor sit amet, consectetur adipisicing.
+					</div>
+					<div class="content-left-news-description-more">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit quos quis quo.
+					</div>
+					<div class="content-left-news-description-other">
+						<div class="content-left-news-description-other-author">John Fillipe</div>
+						<div class="content-left-news-description-other-date">posted on March 23, 2017</div>
+						<div class="content-left-news-description-other-view"><i class="fa fa-eye" aria-hidden="true"></i>4</div>
+						<div class="content-left-news-description-other-tags"><span class="sport">Новости</span></div>
+					</div>					
+				</div>
+			</div>
+			<div class="content-left-news">
+				<div class="content-left-news-image">
+					<img src="img/eat/2.jpg" alt="">
+				</div>
+				<div class="content-left-news-description">
+					<div class="content-left-news-description-title">
+						Lorem ipsum dolor sit amet, consectetur adipisicing.
+					</div>
+					<div class="content-left-news-description-more">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit quos quis quo.
+					</div>
+					<div class="content-left-news-description-other">
+						<div class="content-left-news-description-other-author">John Fillipe</div>
+						<div class="content-left-news-description-other-date">posted on March 23, 2017</div>
+						<div class="content-left-news-description-other-view"><i class="fa fa-eye" aria-hidden="true"></i>4</div>
+						<div class="content-left-news-description-other-tags"><span class="media">Новости</span></div>
+					</div>					
+				</div>
+			</div>
+			<div class="content-left-news">
+				<div class="content-left-news-image">
+					<img src="img/eat/3.jpg" alt="">
+				</div>
+				<div class="content-left-news-description">
+					<div class="content-left-news-description-title">
+						Lorem ipsum dolor sit amet, consectetur adipisicing.
+					</div>
+					<div class="content-left-news-description-more">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit quos quis quo.
+					</div>
+					<div class="content-left-news-description-other">
+						<div class="content-left-news-description-other-author">John Fillipe</div>
+						<div class="content-left-news-description-other-date">posted on March 23, 2017</div>
+						<div class="content-left-news-description-other-view"><i class="fa fa-eye" aria-hidden="true"></i>4</div>
+						<div class="content-left-news-description-other-tags"><span class="sport">Новости</span></div>
+					</div>					
+				</div>
+			</div>
+			<div class="content-left-news">
+				<div class="content-left-news-image">
+					<img src="img/eat/4.jpg" alt="">
+				</div>
+				<div class="content-left-news-description">
+					<div class="content-left-news-description-title">
+						Lorem ipsum dolor sit amet, consectetur adipisicing.
+					</div>
+					<div class="content-left-news-description-more">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit quos quis quo.
+					</div>
+					<div class="content-left-news-description-other">
+						<div class="content-left-news-description-other-author">John Fillipe</div>
+						<div class="content-left-news-description-other-date">posted on March 23, 2017</div>
+						<div class="content-left-news-description-other-view"><i class="fa fa-eye" aria-hidden="true"></i>4</div>
+						<div class="content-left-news-description-other-tags"><span class="media">Новости</span></div>
+					</div>					
+				</div>
 			</div>
 
-			<div class="content-news_column-news_2">
-				<div class="content-news_column-news_2-statistic">
-					<div class="content-news_column-tags"><span class="cinema">Кино</span></div>
-					<div class="content-news_column-news_2-statistic-date">13 марта 2017</div>
-					<div class="content-news_column-news_2-statistic-views"><i class="fa fa-eye" aria-hidden="true"></i> 127 </div>
-
-				</div>
-				<div class="content-news_column-news_2-data">
-					<div class="content-news_column-news_2-data-description">
-						<div class="content-news_column-news_2-data-description-title"><h3>Заголовок новости</h3></div>
-						<div class="content-news_column-news_2-data-description-more">Далеко-далеко за словесными горами в стране, гласных и согласных.</div>
-					</div>					
-					<div class="content-news_column-news_2-data-author">
-						<img src="img/test/1.jpg" alt="">
-					</div>
-				</div>
-				<div class="content-news_column-navigation"></div>
-			</div>
-
-			<div class="content-news_column-news_1">
-				<div class="content-news_column-news_1-statistic">
-					<div class="content-news_column-tags"><span class="sport">Спорт</span></div>
-					<div class="content-news_column-news_1-statistic-date">12 марта 2017</div>
-					<div class="content-news_column-news_1-statistic-views">327 просмотров</div>
-				</div>
-				<div class="content-news_column-news_1-data">
-					<div class="content-news_column-news_1-data-description">
-						<div class="content-news_column-news_1-data-description-title"><h3>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Власти пунктуация диких ему!</h3></div>
-						<div class="content-news_column-news_1-data-description-more">Подробнее внутри</div>
-					</div>					
-					<div class="content-news_column-news_1-data-author">
-						<img src="img/author/minzilya.jpg" alt="">
-					</div>
-				</div>
-				<div class="content-news_column-navigation"></div>
-			</div>
-			
 		</div>
-		<div class="content-extra_column">
-			<div class="content-extra_column-title">
-					<h3>Уже в продаже:</h3>
+		<div class="content-right">
+			<div class="content-right-new_journal">
+				<div class="content-right-title">
+					<span>Новый выпуск!</span>
+				</div>
+				<div class="content-right-new_journal-image">
+					<img src="img/test/2.jpg" alt="">
+				</div>
 			</div>
-			<div class="content-extra_column-img">
-				<img src="img/test/2.jpg" alt="Шонкар">
+			<div class="content-right-news_category">
+				<div class="content-right-title"><span>Рубрикалар</span></div>
+				<div class="content-right-news_category-description">Lorem ipsum dolor sit amet.</div>
+				<div class="content-right-news_category-tags">
+					<div class="content-right-news_category-tags-block">
+						<div class="content-right-news_category-tags-block-name">Спорт</div>
+						<div class="content-right-news_category-tags-block-number">3</div>
+					</div>
+					<div class="content-right-news_category-tags-block">
+						<div class="content-right-news_category-tags-block-name">Здоровье</div>
+						<div class="content-right-news_category-tags-block-number">1</div>
+					</div>
+					<div class="content-right-news_category-tags-block">
+						<div class="content-right-news_category-tags-block-name">Кино</div>
+						<div class="content-right-news_category-tags-block-number">5</div>
+					</div>
+					<div class="content-right-news_category-tags-block">
+						<div class="content-right-news_category-tags-block-name">Спорт</div>
+						<div class="content-right-news_category-tags-block-number">3</div>
+					</div>
+					<div class="content-right-news_category-tags-block">
+						<div class="content-right-news_category-tags-block-name">Здоровье</div>
+						<div class="content-right-news_category-tags-block-number">1</div>
+					</div>
+					<div class="content-right-news_category-tags-block">
+						<div class="content-right-news_category-tags-block-name">Кино</div>
+						<div class="content-right-news_category-tags-block-number">5</div>
+					</div>
+				</div>
 			</div>
+			<div class="content-right-tags"></div>
+			<div class="content-right-popular_post"></div>
 		</div>
-
 	</div>
 	<div class="footer">
-		
+		<div class="footer-logo">
+			<img src="img/logo1.png" alt="">
+		</div>
+		<div class="footer-social">
+			<i class="fa fa-vk" aria-hidden="true"></i>
+			<i class="fa fa-youtube-play" aria-hidden="true"></i>
+		</div>
 	</div>
-	
+
 
 	<div class="hidden"></div>
 

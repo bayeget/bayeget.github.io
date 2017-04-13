@@ -6,6 +6,18 @@ $(function() {
 			return $(this).attr("src").replace(".svg", ".png");
 		});
 	};
+	$(document).ready(function () {
+	    //initialize swiper when document ready  
+	    var mySwiper = new Swiper ('.swiper-container', {
+	      // Optional parameters
+	      	pagination: '.swiper-pagination',
+	        paginationClickable: true,
+	        nextButton: '.swiper-button-next',
+	        prevButton: '.swiper-button-prev',
+	        spaceBetween: 30,
+	        loop: true
+	    })        
+	  });        
 
 	//E-mail Ajax Send
 	//Documentation & Example: https://github.com/agragregra/uniMail
