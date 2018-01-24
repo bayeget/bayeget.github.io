@@ -1,0 +1,670 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Document</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico">
+
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="body body--nanny">
+        <header class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-6 col-md-3">
+                        <a href="/" class="header__logo">Помогатель</a>
+                    </div>
+                    <div class="col-md-offset-2 col-md-3 hidden-xs">
+                        <button class="btn btn-danger btn-lg btn-block header__search">Начать поиск</button>
+                    </div>
+                    <div class="col-xs-6 col-md-4">
+                        <ul class="list-inline text-right hidden-xs">
+                                <li><button type="button" class="btn btn-link header__link">Москва</button></li>
+                            <li class="dropdown">
+                                <button type="button" class="btn btn-link header__link dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Пишите нам <span class="caret"></span></button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Напишите в службу поддержки</a></li>
+                                    <li><a href="#">Ответы на вопросы</a></li>
+                                </ul>
+                            </li>
+                            <li><button type="button" class="btn btn-link header__link">Войти</button></li>
+                        </ul>
+                        <ul class="list-inline text-right visible-xs">
+                            <li><a href="#" class="header__link">Пишите нам</a></li>
+                            <li><button type="button" class="btn btn-link header__link">Войти</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <nav class="menu">
+            <div class="menu__overlay"></div>
+            <div class="menu__slider text-right">
+                <ul class="menu__list">
+                    <li><a href="#">Личный кабинет</a></li>
+                </ul>
+                <ul class="menu__list">
+                    <li><a href="#">Найти няню</a></li>
+                    <li><a href="#">Найти репетитора</a></li>
+                    <li><a href="#">Найти домработницу</a></li>
+                    <li><a href="#">Найти сиделку</a></li>
+                </ul>
+                <ul class="menu__list">
+                    <li class="parent">
+                        <a href="#">Вакансии </a>
+                        <ul class="menu__list menu__list--child">
+                            <li><a href="#">Няни</a>
+                            <li><a href="#">Репетитора</a>
+                            <li><a href="#">Домработниц</a>
+                            <li><a href="#">Сиделок</a>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="menu__list">
+                    <li><a href="#">Детские центры</a></li>
+                    <li><a href="#">Агентства</a></li>
+                </ul>
+                <ul class="menu__list">
+                    <li><a href="#">Статьи и советы</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="nav hidden-xs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-offset-3 col-sm-2">
+                        <div class="nav__dropdown">
+                            <button type="button" class="nav__btn btn-block">Помощь <span>с детьми</span></button>
+                            <div class="nav__list">
+                                <label>Работники</label>
+                                <ul>
+                                    <li><a href="#">Няни</a></li>
+                                    <li><a href="#">Репетиторы для детей</a></li>
+                                </ul>
+                                <label>Вакансии</label>
+                                <ul>
+                                    <li><a href="#">Вакансии нянь</a></li>
+                                    <li><a href="#">Вакансии репетиторов</a></li>
+                                </ul>
+                                <label>Другое</label>
+                                <ul>
+                                    <li><a href="#">Агентства нянь</a></li>
+                                    <li><a href="#">Агентства репетиторов</a></li>
+                                    <li><a href="#">Детские центры</a></li>
+                                </ul>
+                                <label>Статьи и советы</label>
+                                <ul>
+                                    <li><a href="#">Статьи по няням</a></li>
+                                    <li><a href="#">Статьи по репетиторам</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="nav__dropdown">
+                            <button type="button" class="nav__btn btn-block">Помощь <span>по дому</span></button>
+                            <div class="nav__list">
+                                <label>Работники</label>
+                                <ul>
+                                    <li><a href="#">Домработницы</a></li>
+                                </ul>
+                                <label>Вакансии</label>
+                                <ul>
+                                    <li><a href="#">Вакансии домработниц</a></li>
+                                </ul>
+                                <label>Другое</label>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            Агентства домработниц
+                                        </a>
+                                    </li>
+                                </ul>
+                                <label>Подробности</label>
+                                <ul>
+                                    <li><a href="#">Статьи и советы</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="nav__dropdown">
+                            <button type="button" class="nav__btn btn-block">Помощь <span>с близкими</span></button>
+                            <div class="nav__list">
+                                <label>Работники</label>
+                                <ul>
+                                    <li><a href="#">Сиделки</a></li>
+                                </ul>
+                                <label>Вакансии</label>
+                                <ul>
+                                    <li><a href="#">Вакансии сиделок</a></li>
+                                </ul>
+                                <label>Другое</label>
+                                <ul>
+                                    <li><a href="#">Агентства сиделок</a></li>
+                                </ul>
+                                <label>Подробности</label>
+                                <ul>
+                                    <li><a href="#">Статьи и советы</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="breadcrumbs hidden-xs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-10">
+                        <ul class="breadcrumbs__list">
+                            <li><a href="#">Няня для ребенка</a></li>
+                            <li><a href="#">Няня в Москве</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="breadcrumbs__map">
+                            <a href="#">Открыть карту</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <main class="main">
+            <div class="vakansii">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 vacancy-card panel panel-default">
+                            <div class="panel-body">
+                                <div class="media">
+                                    <div class="media-body">
+
+                                        <h2 class="col-md-12 vacancy-card__title">Няня-сопровождающая (секции, кружки, прогулки), частичная занятость</h2>
+                                            
+                                         <div class="col-xs-12 col-sm-4 vacancy-card__update pull-right" style="text-align: right;">
+                                             <span class="glyphicon glyphicon-refresh"></span>
+                                             13 ноя
+                                         </div>   
+                                         
+                                         <div class="col-xs-12 col-sm-8 vacancy-card__address">
+                                             <span class="vacancy-card__creator" style="font-size:14px">Алсу Г.,</span>
+                                             <span class="vacancy-card__location">Москва, Кхаковская</span>
+                                         </div>                                   
+                                             
+                                         <div class="col-sm-6">
+                                            <div class="vacancy-card__params">
+                                                <div class="row">
+                                                    <div class="col-xs-4 col-md-2">
+                                                        <div class="worksheet__param worksheet__param--title">Возраст</div>
+                                                        <div class="worksheet__param worksheet__param--content">-</div>
+                                                        <div class="worksheet__param worksheet__param--suffix">лет</div>
+                                                    </div>
+                                                    <div class="col-xs-4 col-md-2">
+                                                        <div class="worksheet__param worksheet__param--title">Опыт</div>
+                                                        <div class="worksheet__param worksheet__param--content">~</div>
+                                                        <div class="worksheet__param worksheet__param--suffix">любой</div>
+                                                    </div>
+                                                    <div class="col-xs-4 col-md-3">
+                                                        <div class="worksheet__param worksheet__param--title">Оплата</div>
+                                                        <div class="worksheet__param worksheet__param--content">100-150</div>
+                                                        <div class="worksheet__param worksheet__param--suffix">руб./час</div>
+                                                    </div>                                                      
+                                                </div>
+                                            </div>
+                                         </div>
+         
+                                         <div class="col-sm-6 vacancy-card__manage-buttons pull-right">                                                
+                                            <button class="btn btn-default btn-margin">                                                    
+                                                <i class="fa fa-star"></i>
+                                                В избранное
+                                            </button>
+                                            <button class="btn btn-default btn-margin">
+                                                <i class="fa fa-ban"></i>
+                                                Пожаловаться
+                                            </button>
+                                            
+                                         </div>
+                                         <div class="yashare hidden-xs col-sm-12">
+                                             <script src="https://yastatic.net/share2/share.js" async="async"></script>
+                                             <span class="yashare__title">Поделиться:</span>
+                                             <div class="ya-share2" data-services="vkontakte,facebook,twitter,odnoklassniki,gplus"></div>
+                                         </div>
+
+                                    </div>
+                                </div>
+                                <div class="vacancy-card__tabs">
+                                    <ul class="nav nav-tabs hidden-xs" role="tablist">
+                                        <li class="active"><a href="#about" data-toggle="tab">Описание</a></li>
+                                        <li><a href="#schedule" data-toggle="tab">График</a></li>                                        
+                                    </ul>
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <div class="tab-content">
+                                                <a href="#about" class="btn btn-default btn-block visible-xs" data-toggle="pill">Описание</a>
+                                                <div role="tabpanel" class="tab-pane fade" id="about">
+                                                    <p>Для мальчика 6-ти лет требуется активная, тактичная и позитивная няня сопровождения на частичную занятость - гулять, отвозить/привозить на секции и кружки.
+                                                    Количество часов плавающее, максимально - 28 часов в неделю (в среднем, 22-25 часов в неделю), разбитые на 6 дней (с понедельника по субботу).
+                                                    Все занятия в пределах 15-ти минут пешком от дома/сада или 3-4 остановки на общественном транспорте, за исключением субботы (занятия на Старом Арбате).
+                                                    Оплата: оклад 20 000 рублей; при меньшем количестве отработанных часов (т.е. в случае болезни/отмены занятий/каникулы/новогодние праздники и т.д.) оклад остается фиксированным, не уменьшается.
+                                                    Возможные варианты - общественный или личный транспорт (ваш автомобиль). Дополнительная оплата транспорта предусмотрена.</p>
+                                                    <hr>
+                                                    <h4>Кратко</h4>
+                                                    <dl class="dl-horizontal">
+                                                        <dt>Место работы</dt><dd>Без проживания в семье</dd>
+                                                        <dt>Гражданство</dt><dd></dd>
+                                                        <dt>Национальность</dt><dd></dd>
+                                                        <dt>Постоянная регистрация по месту жительства</dt><dd>Да</dd>
+                                                        <dt>Дата начала работы</dt><dd>немедленно</dd>
+                                                        
+                                                    </dl>
+                                                    <hr>
+                                                    <h4>Навыки няни и ограничения:</h4>
+                                                    <dl class="dl-horizontal">
+                                                        <dt>Возраст ребенка</dt>
+                                                        <dd>
+                                                            <ul class="fa-ul">
+                                                                <li><i class="fa fa-times fa-li"></i> Малыши (1-3 лет)</li>
+                                                                <li><i class="fa fa-times fa-li"></i> Дошкольники (4-6 лет)</li>
+                                                            </ul>
+                                                        </dd>
+                                                        <dt>Опыт работы</dt>
+                                                        <dd>
+                                                            <ul class="fa-ul">
+                                                                <li><i class="fa fa-times fa-li"></i> Приготовление еды</li>
+                                                                <li><i class="fa fa-times fa-li"></i> Мытье детской посуды</li>
+                                                                <li><i class="fa fa-times fa-li"></i> Кормление ребенка</li>
+                                                                <li><i class="fa fa-times fa-li"></i> Уборка детской комнаты</li>
+                                                                <li><i class="fa fa-times fa-li"></i> Стирка, глажка детского</li>
+                                                                <li><i class="fa fa-times fa-li"></i> Купание ребенка</li>
+                                                                <li><i class="fa fa-times fa-li"></i> Прогулка, сопровождение</li>
+                                                                <li><i class="fa fa-times fa-li"></i> Развитие по возрасту</li>
+                                                                <li><i class="fa fa-times fa-li"></i> Игры и развлечения</li>
+                                                                <li><i class="fa fa-times fa-li"></i> Подготовка к школе</li>
+                                                            </ul>
+                                                        </dd>
+                                                        <dt>Максимум детей в семье для одновременной работы</dt>
+                                                        <dd>1</dd>
+                                                    </dl>
+                                                </div>
+            
+                                                <a href="#schedule" class="btn btn-default btn-block visible-xs" data-toggle="pill">График</a>
+                                                <div role="tabpanel" class="tab-pane fade" id="schedule">
+                                                    <div class="table-responsive">
+                                                        <table class="table schedule">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Время / Дни недели</td>
+                                                                    <th>Пн</th>
+                                                                    <th>Вт</th>
+                                                                    <th>Ср</th>
+                                                                    <th>Чт</th>
+                                                                    <th>Пт</th>
+                                                                    <th>Сб</th>
+                                                                    <th>Вс</th>
+                                                                </tr>
+            
+                                                                <tr>
+                                                                    <td>Раннее утро (06-09)</td>
+                                                                    <td><i class="fa fa-check"></i></td>
+                                                                    <td><i class="fa fa-check"></i></td>
+                                                                    <td><i class="fa fa-check"></i></td>
+                                                                    <td><i class="fa fa-check"></i></td>
+                                                                    <td><i class="fa fa-check"></i></td>
+                                                                    <td><i class="fa fa-check"></i></td>
+                                                                    <td><i class="fa fa-times fa-lg"></i></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Утро (09-12)</td>
+                                                                    <td><i class="fa fa-check"></i></td>
+                                                                    <td><i class="fa fa-check"></i></td>
+                                                                    <td><i class="fa fa-check"></i></td>
+                                                                    <td><i class="fa fa-check"></i></td>
+                                                                    <td><i class="fa fa-check"></i></td>
+                                                                    <td><i class="fa fa-check"></i></td>
+                                                                    <td><i class="fa fa-times fa-lg"></i></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Начало дня (12-15)</td>
+                                                                    <td><i class="fa fa-check"></i></td>
+                                                                    <td><i class="fa fa-check"></i></td>
+                                                                    <td><i class="fa fa-check"></i></td>
+                                                                    <td><i class="fa fa-check"></i></td>
+                                                                    <td><i class="fa fa-check"></i></td>
+                                                                    <td><i class="fa fa-check"></i></td>
+                                                                    <td><i class="fa fa-times fa-lg"></i></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Конец дня (15-18)</td>
+                                                                    <td><i class="fa fa-check"></i></td>
+                                                                    <td><i class="fa fa-check"></i></td>
+                                                                    <td><i class="fa fa-check"></i></td>
+                                                                    <td><i class="fa fa-check"></i></td>
+                                                                    <td><i class="fa fa-check"></i></td>
+                                                                    <td><i class="fa fa-check"></i></td>
+                                                                    <td><i class="fa fa-times fa-lg"></i></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Вечер (18-21)</td>
+                                                                    <td><i class="fa fa-check"></i></td>
+                                                                    <td><i class="fa fa-check"></i></td>
+                                                                    <td><i class="fa fa-check"></i></td>
+                                                                    <td><i class="fa fa-check"></i></td>
+                                                                    <td><i class="fa fa-check"></i></td>
+                                                                    <td><i class="fa fa-check"></i></td>
+                                                                    <td><i class="fa fa-times fa-lg"></i></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Поздний вечер (21-24)</td>
+                                                                    <td><i class="fa fa-check"></i></td>
+                                                                    <td><i class="fa fa-check"></i></td>
+                                                                    <td><i class="fa fa-check"></i></td>
+                                                                    <td><i class="fa fa-check"></i></td>
+                                                                    <td><i class="fa fa-check"></i></td>
+                                                                    <td><i class="fa fa-check"></i></td>
+                                                                    <td><i class="fa fa-times fa-lg"></i></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Ночь (00-06)</td>
+                                                                    <td><i class="fa fa-check"></i></td>
+                                                                    <td><i class="fa fa-check"></i></td>
+                                                                    <td><i class="fa fa-check"></i></td>
+                                                                    <td><i class="fa fa-check"></i></td>
+                                                                    <td><i class="fa fa-check"></i></td>
+                                                                    <td><i class="fa fa-check"></i></td>
+                                                                    <td><i class="fa fa-times fa-lg"></i></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-primary">Отправить отклик</button>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="panel panel-default similar hidden-xs hidden-sm">
+                                                <div class="panel-heading">
+                                                    <h3 class="panel-title">Похожие вакансии</h3>
+                                                </div>
+                                                <div class="panel-body">
+                                                    <!--RESUME-->
+                                                    <div class="media resume">                                                       
+                                                        <div class="media-body">
+                                                            <div class="resume__title"><a href="#" target="_blank" class="media-heading">Няня-воспитатель к мальчику 1-го года, вахта 4/3</a></div>
+                                                            <div class="resume__address"><span>Вакансия от агентства «English Nanny», Москва, Полежаевская</span></div>
+                                                            <div class="resume__params">
+                                                                <div class="col col--age">
+                                                                    <div class="resume__param resume__param--title">Возраст</div>
+                                                                    <div class="resume__param resume__param--content">30-47</div>
+                                                                    <div class="resume__param resume__param--suffix">лет</div>
+                                                                </div>
+                                                                <div class="col col--work">
+                                                                    <div class="resume__param resume__param--title">Опыт</div>
+                                                                    <div class="resume__param resume__param--content">~</div>
+                                                                    <div class="resume__param resume__param--suffix">любой</div>
+                                                                </div>
+                                                                <div class="col col--price">
+                                                                    <div class="resume__param resume__param--title">Оплата</div>
+                                                                    <div class="resume__param resume__param--content">~</div>
+                                                                    <div class="resume__param resume__param--suffix">по договернности</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="resume__descriptions">
+                                                            <span>Няня-воспитатель на вахту 4/3. Место работы: Москва, Серебряный бор (от метро Полежаевская добираться общественным транспортом). График работы: вахта 4/3 (4 суток работать 3 отдых). Ребенок: мальчик 1-го года. В семье есть еще дети (мальчик 3-х лет и девочка 6-ти...
+                                                                    <br>Дата начала работы: немедленно</span>
+                                                        </div>
+                                                    </div>
+                                                    <!--RESUME END-->
+                                                </div>
+                                                <div class="panel-body">
+                                                        <!--RESUME-->
+                                                        <div class="media resume">                                                       
+                                                            <div class="media-body">
+                                                                <div class="resume__title"><a href="#" target="_blank" class="media-heading">Няня-воспитатель к мальчику 1-го года, вахта 4/3</a></div>
+                                                                <div class="resume__address"><span>Вакансия от агентства «English Nanny», Москва, Полежаевская</span></div>
+                                                                <div class="resume__params">
+                                                                    <div class="col col--age">
+                                                                        <div class="resume__param resume__param--title">Возраст</div>
+                                                                        <div class="resume__param resume__param--content">30-47</div>
+                                                                        <div class="resume__param resume__param--suffix">лет</div>
+                                                                    </div>
+                                                                    <div class="col col--work">
+                                                                        <div class="resume__param resume__param--title">Опыт</div>
+                                                                        <div class="resume__param resume__param--content">~</div>
+                                                                        <div class="resume__param resume__param--suffix">любой</div>
+                                                                    </div>
+                                                                    <div class="col col--price">
+                                                                        <div class="resume__param resume__param--title">Оплата</div>
+                                                                        <div class="resume__param resume__param--content">~</div>
+                                                                        <div class="resume__param resume__param--suffix">по договернности</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="resume__descriptions">
+                                                                <span>Няня-воспитатель на вахту 4/3. Место работы: Москва, Серебряный бор (от метро Полежаевская добираться общественным транспортом). График работы: вахта 4/3 (4 суток работать 3 отдых). Ребенок: мальчик 1-го года. В семье есть еще дети (мальчик 3-х лет и девочка 6-ти...
+                                                                        <br>Дата начала работы: немедленно</span>
+                                                            </div>
+                                                        </div>
+                                                        <!--RESUME END-->
+                                                    </div>
+                                                    <div class="panel-body">
+                                                            <!--RESUME-->
+                                                            <div class="media resume">                                                       
+                                                                <div class="media-body">
+                                                                    <div class="resume__title"><a href="#" target="_blank" class="media-heading">Няня-воспитатель к мальчику 1-го года, вахта 4/3</a></div>
+                                                                    <div class="resume__address"><span>Вакансия от агентства «English Nanny», Москва, Полежаевская</span></div>
+                                                                    <div class="resume__params">
+                                                                        <div class="col col--age">
+                                                                            <div class="resume__param resume__param--title">Возраст</div>
+                                                                            <div class="resume__param resume__param--content">30-47</div>
+                                                                            <div class="resume__param resume__param--suffix">лет</div>
+                                                                        </div>
+                                                                        <div class="col col--work">
+                                                                            <div class="resume__param resume__param--title">Опыт</div>
+                                                                            <div class="resume__param resume__param--content">~</div>
+                                                                            <div class="resume__param resume__param--suffix">любой</div>
+                                                                        </div>
+                                                                        <div class="col col--price">
+                                                                            <div class="resume__param resume__param--title">Оплата</div>
+                                                                            <div class="resume__param resume__param--content">~</div>
+                                                                            <div class="resume__param resume__param--suffix">по договернности</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="resume__descriptions">
+                                                                    <span>Няня-воспитатель на вахту 4/3. Место работы: Москва, Серебряный бор (от метро Полежаевская добираться общественным транспортом). График работы: вахта 4/3 (4 суток работать 3 отдых). Ребенок: мальчик 1-го года. В семье есть еще дети (мальчик 3-х лет и девочка 6-ти...
+                                                                            <br>Дата начала работы: немедленно</span>
+                                                                </div>
+                                                            </div>
+                                                            <!--RESUME END-->
+                                                        </div>
+                                                        <div class="panel-body">
+                                                                <!--RESUME-->
+                                                                <div class="media resume">                                                       
+                                                                    <div class="media-body">
+                                                                        <div class="resume__title"><a href="#" target="_blank" class="media-heading">Няня-воспитатель к мальчику 1-го года, вахта 4/3</a></div>
+                                                                        <div class="resume__address"><span>Вакансия от агентства «English Nanny», Москва, Полежаевская</span></div>
+                                                                        <div class="resume__params">
+                                                                            <div class="col col--age">
+                                                                                <div class="resume__param resume__param--title">Возраст</div>
+                                                                                <div class="resume__param resume__param--content">30-47</div>
+                                                                                <div class="resume__param resume__param--suffix">лет</div>
+                                                                            </div>
+                                                                            <div class="col col--work">
+                                                                                <div class="resume__param resume__param--title">Опыт</div>
+                                                                                <div class="resume__param resume__param--content">~</div>
+                                                                                <div class="resume__param resume__param--suffix">любой</div>
+                                                                            </div>
+                                                                            <div class="col col--price">
+                                                                                <div class="resume__param resume__param--title">Оплата</div>
+                                                                                <div class="resume__param resume__param--content">~</div>
+                                                                                <div class="resume__param resume__param--suffix">по договернности</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="resume__descriptions">
+                                                                        <span>Няня-воспитатель на вахту 4/3. Место работы: Москва, Серебряный бор (от метро Полежаевская добираться общественным транспортом). График работы: вахта 4/3 (4 суток работать 3 отдых). Ребенок: мальчик 1-го года. В семье есть еще дети (мальчик 3-х лет и девочка 6-ти...
+                                                                                <br>Дата начала работы: немедленно</span>
+                                                                    </div>
+                                                                </div>
+                                                                <!--RESUME END-->
+                                                            </div>
+                                                            <div class="panel-body">
+                                                                    <!--RESUME-->
+                                                                    <div class="media resume">                                                       
+                                                                        <div class="media-body">
+                                                                            <div class="resume__title"><a href="#" target="_blank" class="media-heading">Няня-воспитатель к мальчику 1-го года, вахта 4/3</a></div>
+                                                                            <div class="resume__address"><span>Вакансия от агентства «English Nanny», Москва, Полежаевская</span></div>
+                                                                            <div class="resume__params">
+                                                                                <div class="col col--age">
+                                                                                    <div class="resume__param resume__param--title">Возраст</div>
+                                                                                    <div class="resume__param resume__param--content">30-47</div>
+                                                                                    <div class="resume__param resume__param--suffix">лет</div>
+                                                                                </div>
+                                                                                <div class="col col--work">
+                                                                                    <div class="resume__param resume__param--title">Опыт</div>
+                                                                                    <div class="resume__param resume__param--content">~</div>
+                                                                                    <div class="resume__param resume__param--suffix">любой</div>
+                                                                                </div>
+                                                                                <div class="col col--price">
+                                                                                    <div class="resume__param resume__param--title">Оплата</div>
+                                                                                    <div class="resume__param resume__param--content">~</div>
+                                                                                    <div class="resume__param resume__param--suffix">по договернности</div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="resume__descriptions">
+                                                                            <span>Няня-воспитатель на вахту 4/3. Место работы: Москва, Серебряный бор (от метро Полежаевская добираться общественным транспортом). График работы: вахта 4/3 (4 суток работать 3 отдых). Ребенок: мальчик 1-го года. В семье есть еще дети (мальчик 3-х лет и девочка 6-ти...
+                                                                                    <br>Дата начала работы: немедленно</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <!--RESUME END-->
+                                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                                             
+                            </div>
+                                                      
+                            
+                                   
+                        
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+
+
+        <footer class="footer hidden-xs">
+            <div class="container">
+                <ul class="footer__list">
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Статьи и советы</a></li>
+                    <li><a href="#">Ответы на вопросы</a></li>
+                    <li><a href="#">Карта сайта</a></li>
+                    <li><a href="#">Напишите нам</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Для СМИ</a></li>
+                    <li><a href="#">Выбрать другой регион</a></li>
+                </ul>
+                <ul class="footer__list footer__list--fast">
+                    <li><a href="#">Няня</a></li>
+                    <li><a href="#">Домработница</a></li>
+                    <li><a href="#">Сиделка</a></li>
+                    <li><a href="#">Репетитор</a></li>
+                    <li><a href="#">Кадровые агентства</a></li>
+                    <li><a href="#">Детские центры развития</a></li>
+                </ul>
+                <ul class="footer__list footer__list--fast">
+                    <li><a href="#">Каталог нянь по районам</a></li>
+                    <li><a href="#">Каталог домработниц по районам</a></li>
+                    <li><a href="#">Каталог сиделок по районам</a></li>
+                    <li><a href="#">Каталог репетиторов по районам</a></li>
+                </ul>
+                <ul class="footer__list footer__list--fast">
+                    <li><a href="#">Каталог вакансий для нянь</a></li>
+                    <li><a href="#">Каталог вакансий для домработниц</a></li>
+                    <li><a href="#">Каталог вакансий для сиделок</a></li>
+                    <li><a href="#">Каталог вакансий для репетиторов</a></li>
+                </ul>
+                <div class="footer__social-list">
+                    <a href="#"><span class="social social--fb"></span></a>
+                    <a href="#"><span class="social social--vk"></span></a>
+                    <a href="#"><span class="social social--ok"></span></a>
+                    <a href="#"><span class="social social--inst"></span></a>
+                    <a href="#"><span class="social social--tw"></span></a>
+                    <a href="#"><span class="social social--youtube"></span></a>
+                </div>
+        
+            </div>
+        </footer>
+        
+        <!-- REG -->
+        <div class="modal fade" id="modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    
+                </div>
+            </div>
+        </div>
+        
+        <!--
+            DISCOUNT
+            $.discount.show();
+            $.discount.hide();
+        -->
+        <div class="discount-modal">
+            <div class="container">
+                <div class="discount-modal__content">
+                    <h2 class="discount-modal__title">Вам скидка 1000 рублей!</h2>
+                    <p>Добро пожаловать на Помогатель! Мы рады новым друзьям!</p>
+                    <p>В честь нашего знакомства получите доступ к контактам всех сиделок города и области всего за 690 рублей.</p>
+                    <p>Воспользуйтесь скидкой в 1000 рублей от обычной цены 1690. Торопитесь, акция действует только в ближайшие 48 часов.</p>
+                    <div class="discount-modal__timer text-center">
+                        <span>До конца акции осталось:</span>
+                        <div class="discount-modal__counter">
+                            <img src="https://image.sendsay.ru/countdown?segment=D&dt=2017-07-27T10:00&color=gray&size=small&uuid=972,2888378,305974" alt="D">                    
+                            <img src="https://image.sendsay.ru/countdown?segment=h&dt=2017-07-27T10:00&color=gray&size=small&uuid=972,2888378,305974" alt="h">
+                            <img src="https://image.sendsay.ru/countdown?segment=m&dt=2017-07-27T10:00&color=gray&size=small&uuid=972,2888378,305974" alt="m">
+                            <img src="https://image.sendsay.ru/countdown?segment=s&dt=2017-07-27T10:00&color=gray&size=small&uuid=972,2888378,305974" alt="s">
+                        </div>
+                    </div>
+                    <div class="discount-modal__btns text-center hidden-xs">
+                        <button type="button" class="btn btn-lg btn-link" onclick="$.discount.hide();">Не сейчас</button>
+                        <button type="button" class="btn btn-lg btn-success">Оплатить со скидкой</button>
+                    </div>
+                    <div class="discount-modal__btns text-center visible-xs">
+                        <button type="button" class="btn btn-lg btn-success">Оплатить со скидкой</button>
+                        <button type="button" class="btn btn-lg btn-link" onclick="$.discount.hide();">Не сейчас</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.4/holder.min.js"></script>
+        <script src="http://cdn.pmgt1.ru/lib/libs.bundle.js"></script>
+        <script src="../js/styles.js"></script>
+       
+</body>
+
+</html>
