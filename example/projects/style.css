@@ -1,0 +1,251 @@
+@font-face {
+    font-family: 'DIN Pro Regular';
+    src: url('fonts/DINPro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* переопределяем bootstrap стили */
+
+.btn {
+    border-radius: 0;
+    border-width: 2px;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 10px 75px;
+    font-weight: 700;
+    font-family: 'DIN Pro Regular';
+}
+
+.btn-outline-dark {
+    color: #344258;
+    border-color: #00264c;
+}
+
+.btn-outline-dark:hover {
+    color: #fff;
+    background-color: #00264c;
+    border-color: #00264c;
+}
+
+.btn-outline-light {
+    color: #fff;
+    border-color: #fff;
+}
+
+.btn-outline-light:hover {
+    color: #344258;
+    background-color: #fff;
+    border-color: #00264c;
+}
+
+.form-control {
+    background-color: rgba(84, 102, 130, .33);
+    border-radius: 0;
+    border: 1px solid #0c1c28;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.form-control:focus {
+    background-color: rgba(84, 102, 130, .33);
+    border-color: #0c1c28;
+    box-shadow: none;
+    color: #ffffff;
+}
+
+.form-control::-webkit-input-placeholder {
+    color: #ffffff;
+    font-family: 'DIN Pro Regular';
+}
+
+.form-control::-moz-placeholder {
+    color: #ffffff;
+    font-family: 'DIN Pro Regular';
+}
+
+.form-control:-moz-placeholder {
+    color: #ffffff;
+    font-family: 'DIN Pro Regular';
+}
+
+.form-control:-ms-input-placeholder {
+    color: #ffffff;
+    font-family: 'DIN Pro Regular';
+}
+
+/*  */
+
+body {
+    overflow-x: hidden;
+    font-family: "Myriad Pro";
+}
+
+.projects {
+    position: relative;
+}
+
+.projects__title {
+    font-family: 'DIN Pro Regular';
+    font-size: 28px;
+    color: #344258;
+}
+
+.projects__text {
+    font-size: 14px;
+    color: #08172d;
+}
+
+.projects-item__img {
+    position: relative;
+    width: 100%;
+    height: auto
+}
+
+.projects-item__title {
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    position: absolute;
+    bottom: 20px;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.projects-item {
+    position: relative;
+    width: 100%;
+    height: auto;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.projects-item__text {
+    font-size: 14px;
+    color: #fff;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+.projects-item__sep {
+    width: 60px;
+    height: 2px;
+    background: #ffffff;
+    position: relative;
+    margin: 20px auto 15px auto;
+}
+
+.projects-item:hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.projects-item__bg {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.projects-item:hover .projects-item__bg {
+    opacity: 0.7;
+    background: #000;
+}
+
+.projects-item__hidden {
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects-item:hover .projects-item__hidden {
+    display: flex;
+}
+
+.projects-item .btn {
+    padding: 10px 40px;
+}
+
+.footer {
+    background-color: #0c1c28;
+}
+
+.form {
+    padding: 30px;
+    border: 3px solid rgba(84, 102, 130, .33);
+}
+
+.form .btn {
+    padding: 10px 40px;
+}
+
+.form a {
+    font-size: 12px;
+    text-decoration: underline;
+    color: #4c89c1;
+    position: relative;
+    display: block;
+    font-family: 'DIN Pro Regular';
+}
+
+.contacts {
+    color: #fff;
+    font-size: 12px;
+}
+
+.contacts__title {
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'DIN Pro Regular';
+}
+
+.contacts__info {
+    display: flex;
+    margin-top: 40px;
+    align-items: baseline;
+    flex-flow: row wrap;
+}
+
+.contacts__info-telephone {
+    font-size: 20px;
+    display: flex;
+    flex-flow: column;
+    margin-right: 60px;
+}
+
+.contacts__info-telephone a {
+    color: #fff;
+}
+
+.contacts__info-mail {
+    border-left: 2px solid #0058a7;
+    display: flex;
+    flex-flow: column;
+    color: #3d95e3;
+    justify-content: center;
+    padding: 10px 0 0 20px;
+}
+
+.contacts__info-mail a {
+    color: #3d95e3;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .projects-item__hidden {
+        justify-content: flex-start;
+        padding-top: 10px;
+    }
+    .projects-item__text {
+        font-size: 12px;
+    }
+}
