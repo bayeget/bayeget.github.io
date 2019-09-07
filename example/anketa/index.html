@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Анкета</title>
+
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="css/fonts.min.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="main-menu">
+            <a href="#info">Личная информация</a>
+            <a href="#exp">Опыт</a>
+            <a href="#js">JavaScript</a>
+            <a href="#about">О себе</a>
+        </div>
+    </div>
+    <div class="bg"></div>
+    <div class="mobile-menu__button"></div>
+    <div class="content">
+        <div class="title">
+            <h1>Анкета</h1>
+        </div>
+        <form>
+            <div class="info" id="info">
+                <div class="icons icons--info"></div>
+                <h4>Личная информация</h4>
+                <div class="info__form">
+                    <label class="input">
+                        <input type="text">
+                        <span class="input__placeholder">ФИО</span>
+                    </label>
+                    <label class="input input--select">
+                        <input type="text">
+                        <span class="input__placeholder">Год рождения</span>
+                        <span class="icons icons--arrow-down"></span>
+                        <div class="input__list">
+                            <div class="input__list-item">1999</div>
+                            <div class="input__list-item">1998</div>
+                            <div class="input__list-item">1997</div>
+                            <div class="input__list-item">1996</div>
+                            <div class="input__list-item">1995</div>
+                            <div class="input__list-item">1994</div>
+                            <div class="input__list-item">1993</div>
+                            <div class="input__list-item">1992</div>
+                            <div class="input__list-item">1991</div>
+                            <div class="input__list-item">1990</div>
+                            <div class="input__list-item">1989</div>
+                            <div class="input__list-item">1987</div>
+                            <div class="input__list-item">1988</div>
+
+                        </div>
+                    </label>
+                    <label class="input">
+                        <input type="text">
+                        <span class="input__placeholder">Место проживания</span>
+                    </label>
+                    <label class="input">
+                        <input type="text">
+                        <span class="input__placeholder">Skype</span>
+                    </label>
+                    <label class="input">
+                        <input type="text">
+                        <span class="input__placeholder">E-mail</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="exp" id="exp">
+                <div class="icons icons--exp"></div>
+                <h4>Расскажите о своем опыте</h4>
+                <div class="exp__form">
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        <div class="checkbox__input"></div>
+                        БЭМ/OOCSS
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        <div class="checkbox__input"></div>
+                        Верстаю семантично
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        <div class="checkbox__input"></div>
+                        Webpack
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        <div class="checkbox__input"></div>
+                        Stylus/LESS/SASS
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        <div class="checkbox__input"></div>
+                        ES2015/ES2016
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        <div class="checkbox__input"></div>
+                        jQuery
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        <div class="checkbox__input"></div>
+                        Работаю с SVG
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        <div class="checkbox__input"></div>
+                        Gulp/GRUNT
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        <div class="checkbox__input"></div>
+                        Ипользую Git
+                    </label>
+                </div>
+            </div>
+            <div class="js" id="js">
+                <div class="icons icons--js"></div>
+                <h4>Уровень владения JavaScript</h4>
+                <div class="range-slider">
+                    <div class="range-slider-cells">
+                        <div class="range-slider__cell">
+                            <div class="range-slider__text">Не владею</div>
+                        </div>
+                        <div class="range-slider__cell">
+                            <div class="range-slider__text">Использую готовые решения</div>
+                        </div>
+                        <div class="range-slider__cell">
+                            <div class="range-slider__text">Использую готовые решения и умею их переделывать</div>
+                        </div>
+                        <div class="range-slider__cell">
+                            <div class="range-slider__text">Пишу сложный JS с нуля</div>
+                        </div>
+                    </div>
+                    <div class="range-slider-line">
+                        <div class="range-slider-line--active"></div>
+                        <div class="range-slider-line--gray"></div>
+
+
+
+                        <div class="range-slider-cursor"></div>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="about" id="about">
+                <div class="icons icons--about"></div>
+                <h4>Расскажите о себе</h4>
+                <div class="about__text">
+                    Напишите несколько предложений, чем привлекла наша вакансия и что вы ожидаете от работы у нас.
+                </div>
+                <textarea placeholder="Понравилась тем, что..."></textarea>
+            </div>
+            <button type="submit" class="button">Готово</button>
+        </form>
+    </div>
+    <script src="/js/libs.js"></script>
+    <script src="/js/scripts.js"></script>
+</body>
+
+</html>
