@@ -52,7 +52,6 @@ $(document).mouseup(function (e) {
         }        
     }
 });
-
 // range slider 
 $('.range-slider-line').on('click', function (e) {
     var pos = $(this).offset();
